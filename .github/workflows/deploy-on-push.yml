@@ -1,8 +1,8 @@
 on:
   push:
     branches:
-      - rt-main
-      - google-main
+      - rt-dev
+      - rt-demo
 
 name: Deploy and Slack Notification
 jobs:
