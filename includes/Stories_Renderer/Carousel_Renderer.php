@@ -28,6 +28,10 @@ namespace Google\Web_Stories\Stories_Renderer;
 
 /**
  * Carousel_Renderer class.
+ *
+ * Note: This class is useful to render stories in carousel view type.
+ * Do not instantiate this class directly, pass `view_type` argument
+ * to `Story_Query` which will handle the instantiation of the class.
  */
 class Carousel_Renderer extends Renderer {
 
@@ -63,6 +67,8 @@ class Carousel_Renderer extends Renderer {
 	/**
 	 * Renders the stories output for given attributes.
 	 *
+	 * @SuppressWarnings(PHPMD.UnusedLocalVariable)
+	 *
 	 * @return string Rendered stories output.
 	 */
 	public function render() {
@@ -90,7 +96,7 @@ class Carousel_Renderer extends Renderer {
 					aria-label="<?php esc_attr_e( 'Basic carousel', 'web-stories' ); ?>"
 				>
 					<?php
-					foreach ( $this->story_posts as $key => $story ) {
+					foreach ( $this->story_posts as $story ) {
 						$this->render_single_story_content();
 						$this->next();
 					}
