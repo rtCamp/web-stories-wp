@@ -177,7 +177,7 @@ class Plugin {
 	 */
 	public function register() {
 		// Plugin compatibility / polyfills.
-		add_action( 'wp', [ $this, 'load_amp_plugin_compat' ] );
+		add_action( 'init', [ $this, 'load_amp_plugin_compat' ] );
 
 		// Settings.
 		$this->settings = new Settings();

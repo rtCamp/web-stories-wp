@@ -232,7 +232,6 @@ class Selected_Stories_Block extends Latest_Stories_Block {
 			'posts_per_page' => $this->max_num_of_stories,
 			'post_status'    => 'publish',
 			'no_found_rows'  => true,
-			'fields'         => 'ids',
 			'post__in'       => $attributes['stories'],
 			'orderby'        => 'post__in',
 		];
