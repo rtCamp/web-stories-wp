@@ -71,10 +71,10 @@ class Carousel_Renderer extends \WP_UnitTestCase_Base {
 
 		$this->story_model = $this->createMock( Story::class );
 
-		$this->story_model->method( 'get_height' )->willReturn( 430 );
+		$this->story_model->method( 'get_height' )->willReturn( 475 );
 		$this->story_model->method( 'get_width' )->willReturn( 630 );
 
-		$this->stories     = $this->createMock( Stories::class );
+		$this->stories = $this->createMock( Stories::class );
 		$this->stories->method( 'get_stories' )->willReturn( [ $this->story_model ] );
 		$this->story_posts = [ get_post( self::$story_id ) ];
 	}
@@ -109,7 +109,7 @@ class Carousel_Renderer extends \WP_UnitTestCase_Base {
 				'show_title'                => false,
 				'show_author'               => false,
 				'show_date'                 => false,
-				'show_story_poster'         => false,
+				'show_story_player'         => false,
 				'show_stories_archive_link' => false,
 				'stories_archive_label'     => 'View all stories',
 				'class'                     => '',
