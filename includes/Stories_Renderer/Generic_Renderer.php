@@ -84,6 +84,9 @@ class Generic_Renderer extends Renderer {
 				if ( ! $this->is_amp_request() ) {
 					$this->render_stories_with_lightbox_noamp();
 				}
+				if ( $this->is_amp_request() ) {
+					$this->render_stories_with_lightbox_amp();
+				}
 				?>
 
 			</div>
