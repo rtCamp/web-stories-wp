@@ -31,23 +31,6 @@ use Google\Web_Stories\Stories_Renderer\Fields\BaseField;
 class ListView extends BaseFieldState {
 
 	/**
-	 * Title field.
-	 *
-	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
-	 */
-	public function title() {
-		$label = parent::title()->label();
-
-		return $this->prepare_field(
-			[
-				'label'    => $label,
-				'show'     => true,
-				'readonly' => true,
-			]
-		);
-	}
-
-	/**
 	 * Excerpt field.
 	 *
 	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
@@ -109,7 +92,7 @@ class ListView extends BaseFieldState {
 		return $this->prepare_field(
 			[
 				'label'    => $label,
-				'show'     => true,
+				'show'     => false,
 				'readonly' => false,
 			]
 		);

@@ -38,11 +38,8 @@ import { select } from '@wordpress/data';
 /**
  * Internal dependencies
  */
-import {
-  CIRCLES_VIEW_TYPE,
-  LIST_VIEW_TYPE,
-  ORDER_BY_OPTIONS,
-} from '../constants';
+import { useConfig } from '../../../dashboard/app/config';
+import { ORDER_BY_OPTIONS } from '../constants';
 import AuthorSelection from './authorSelection';
 
 /**
@@ -93,31 +90,19 @@ const StoriesInspectorControls = (props) => {
     showFilters = true,
   } = props;
 
-  useEffect(() => {
-    if (CIRCLES_VIEW_TYPE !== viewType) {
-      setAttributes({
-        isShowingTitle: true,
-        isShowingAuthor: true,
-        isShowingDate: true,
-      });
-    } else {
-      setAttributes({
-        isShowingTitle: true,
-        isShowingDate: false,
-        isShowingAuthor: false,
-      });
-    }
+  const { fieldStates } = useConfig();
 
-    if (LIST_VIEW_TYPE === viewType) {
-      setAttributes({
-        isShowingExcerpt: true,
-      });
-    } else {
-      setAttributes({
-        isShowingExcerpt: false,
-      });
-    }
-  }, [viewType, setAttributes]);
+  useEffect(() => {
+    const updateState = {
+      isShowingTitle: fieldStates[viewType].title.show,
+      isShowingExcerpt: fieldStates[viewType].excerpt.show,
+      isShowingDate: fieldStates[viewType].date.show,
+      isShowingAuthor: fieldStates[viewType].author.show,
+      isShowingViewAll: fieldStates[viewType]['archive_link'].show,
+    };
+
+    setAttributes(updateState);
+  }, [viewType, setAttributes, fieldStates]);
 
   // Set up sort options.
   const orderByOptions = Object.entries(ORDER_BY_OPTIONS).map(

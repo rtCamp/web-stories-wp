@@ -31,16 +31,17 @@ use Google\Web_Stories\Stories_Renderer\Fields\BaseField;
 class GridView extends BaseFieldState {
 
 	/**
-	 * Title field.
+	 * Excerpt field.
 	 *
 	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
 	 */
-	public function title() {
-		$label = parent::title()->label();
+	public function excerpt() {
+		$label = parent::excerpt()->label();
 		return $this->prepare_field(
 			[
-				'label' => $label,
-				'show'  => true,
+				'label'    => $label,
+				'show'     => false,
+				'readonly' => true,
 			]
 		);
 	}
@@ -57,6 +58,38 @@ class GridView extends BaseFieldState {
 				'label'    => $label,
 				'show'     => true,
 				'readonly' => false,
+			]
+		);
+	}
+
+	/**
+	 * Date field.
+	 *
+	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
+	 */
+	public function date() {
+		$label = parent::date()->label();
+		return $this->prepare_field(
+			[
+				'label'    => $label,
+				'show'     => false,
+				'readonly' => false,
+			]
+		);
+	}
+
+	/**
+	 * Image align field.
+	 *
+	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
+	 */
+	public function image_align() {
+		$label = parent::image_align()->label();
+		return $this->prepare_field(
+			[
+				'label'    => $label,
+				'show'     => false,
+				'readonly' => true,
 			]
 		);
 	}

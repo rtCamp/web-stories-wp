@@ -26,6 +26,7 @@
 
 namespace Google\Web_Stories\Block;
 
+use Google\Web_Stories\Customizer;
 use Google\Web_Stories\Embed_Base;
 use Google\Web_Stories\Story_Query;
 use Google\Web_Stories\Tracking;
@@ -210,6 +211,7 @@ class Web_Stories_Block {
 					'stories' => sprintf( '/web-stories/v1/%s', $rest_base ),
 					'users'   => '/web-stories/v1/users/',
 				],
+				'fieldStates'     => $this->fields_states(),
 			],
 		];
 
@@ -358,5 +360,46 @@ class Web_Stories_Block {
 		}
 
 		return $query_args;
+	}
+
+	/**
+	 * Wrapper function for fetching field states
+	 * based on the view types.
+	 *
+	 * Mainly uses FieldState and Fields classes.
+	 *
+	 * @return array
+	 */
+	protected function fields_states() {
+		$views = [
+			'circles'  => __( 'Circles', 'web-stories' ),
+			'grid'     => __( 'Grid', 'web-stories' ),
+			'list'     => __( 'List', 'web-stories' ),
+			'carousel' => __( 'Carousel', 'web-stories' ),
+		];
+
+		$fields = [
+			'title',
+			'author',
+			'date',
+			'image_align',
+			'excerpt',
+			'archive_link',
+		];
+
+		$field_states = [];
+
+		foreach ( $views as $view_type => $view_label ) {
+			$field_state = ( new Story_Query( [ 'view_type' => $view_type ] ) )->get_renderer()->field();
+			foreach ( $fields as $field ) {
+				$field_states[ $view_type ][ $field ] = [
+					'show'     => $field_state->$field()->show(),
+					'label'    => $field_state->$field()->label(),
+					'readonly' => $field_state->$field()->readonly(),
+				];
+			}
+		}
+
+		return $field_states;
 	}
 }
