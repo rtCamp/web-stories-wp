@@ -139,41 +139,17 @@ class Web_Stories_Block {
 						'type'    => 'string',
 						'default' => '',
 					],
-					'isShowingTitle'   => [
-						'type'    => 'boolean',
-						'default' => true,
-					],
-					'isShowingExcerpt' => [
-						'type'    => 'boolean',
-						'default' => false,
-					],
-					'isShowingDate'    => [
-						'type'    => 'boolean',
-						'default' => false,
-					],
-					'isShowingAuthor'  => [
-						'type'    => 'boolean',
-						'default' => false,
-					],
-					'isShowingViewAll' => [
-						'type'    => 'boolean',
-						'default' => false,
-					],
 					'viewAllLinkLabel' => [
 						'type'    => 'string',
-						'default' => '',
+						'default' => __( 'View all stories', 'web-stories' ),
 					],
 					'authors'          => [
 						'type'    => 'array',
 						'default' => [],
 					],
-					'imageOnRight'     => [
-						'type'    => 'boolean',
-						'default' => false,
-					],
-					'isStyleSquared'   => [
-						'type'    => 'boolean',
-						'default' => false,
+					'fieldState'       => [
+						'type'    => 'object',
+						'default' => $this->fields_states(),
 					],
 				],
 				'render_callback' => [ $this, 'render_block' ],
@@ -259,19 +235,14 @@ class Web_Stories_Block {
 			&& ( 'latest-stories' === $attributes['blockType'] || 'selected-stories' === $attributes['blockType'] ) ) {
 
 			$story_attributes = [
-				'align'                     => ! empty( $attributes['align'] ) ? $attributes['align'] : 'none',
-				'view_type'                 => ! empty( $attributes['viewType'] ) ? $attributes['viewType'] : 'grid',
-				'number_of_columns'         => ! empty( $attributes['numOfColumns'] ) ? $attributes['numOfColumns'] : 3,
-				'show_title'                => ! empty( $attributes['isShowingTitle'] ) ? $attributes['isShowingTitle'] : false,
-				'show_excerpt'              => ! empty( $attributes['isShowingExcerpt'] ) ? $attributes['isShowingExcerpt'] : false,
-				'show_date'                 => ! empty( $attributes['isShowingDate'] ) ? $attributes['isShowingDate'] : false,
-				'show_author'               => ! empty( $attributes['isShowingAuthor'] ) ? $attributes['isShowingAuthor'] : false,
-				'show_stories_archive_link' => ! empty( $attributes['isShowingViewAll'] ) ? $attributes['isShowingViewAll'] : false,
-				'stories_archive_label'     => ! empty( $attributes['viewAllLinkLabel'] ) ? $attributes['viewAllLinkLabel'] : __( 'View all stories', 'web-stories' ),
-				'list_view_image_alignment' => ! empty( $attributes['imageOnRight'] ) ? 'right' : 'left',
-				'has_square_corners'        => ! empty( $attributes['isStyleSquared'] ) ? $attributes['isStyleSquared'] : false,
-				'circle_size'               => ! empty( $attributes['sizeOfCircles'] ) ? $attributes['sizeOfCircles'] : 150,
+				'align'                 => $attributes['align'],
+				'view_type'             => ! empty( $attributes['viewType'] ) ? $attributes['viewType'] : 'grid',
+				'number_of_columns'     => $attributes['numOfColumns'],
+				'stories_archive_label' => $attributes['viewAllLinkLabel'],
+				'circle_size'           => $attributes['sizeOfCircles'],
 			];
+
+			$story_attributes = array_merge( $story_attributes, $this->get_mapped_field_states( $attributes ) );
 
 			$stories = new Story_Query( $story_attributes, $this->get_query_args() );
 
@@ -281,6 +252,45 @@ class Web_Stories_Block {
 		$embed_block = new Embed_Base();
 
 		return $embed_block->render( $attributes );
+	}
+
+	/**
+	 * Get the field value.
+	 *
+	 * @param string $field     Field name to get the value of.
+	 * @param string $view_type View type to get the field from.
+	 *
+	 * @return boolean
+	 */
+	public function get_field_state( $field, $view_type ) {
+		return $this->block_attributes['fieldState'][ $view_type ][ $field ]['show'];
+	}
+
+	/**
+	 * Maps fields to the story params.
+	 *
+	 * @param array $attributes Block Attributes.
+	 *
+	 * @return array
+	 */
+	public function get_mapped_field_states( $attributes ) {
+		$controls = [
+			'show_title'                => 'title',
+			'show_excerpt'              => 'excerpt',
+			'show_date'                 => 'date',
+			'show_author'               => 'author',
+			'show_stories_archive_link' => 'archive_link',
+			'list_view_image_alignment' => 'image_align',
+			'has_square_corners'        => 'sharp_corners',
+		];
+
+		$controls_state = [];
+
+		foreach ( $controls as $control => $field ) {
+			$controls_state[ $control ] = $this->get_field_state( $field, $attributes['viewType'] );
+		}
+
+		return $controls_state;
 	}
 
 	/**
@@ -380,10 +390,11 @@ class Web_Stories_Block {
 
 		$fields = [
 			'title',
+			'excerpt',
 			'author',
 			'date',
 			'image_align',
-			'excerpt',
+			'sharp_corners',
 			'archive_link',
 		];
 

@@ -41,24 +41,62 @@ class CircleView extends BaseFieldState {
 		return $this->prepare_field(
 			[
 				'label'    => $label,
+				'show'     => false,
 				'readonly' => false,
 			]
 		);
 	}
 
 	/**
-	 * Archive link field.
+	 * Author field.
 	 *
 	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
 	 */
-	public function archive_link() {
+	public function author() {
 		$label = parent::author()->label();
+
 		return $this->prepare_field(
 			[
 				'label'    => $label,
-				'show'     => true,
-				'readonly' => false,
+				'show'     => false,
+				'readonly' => true,
 			]
 		);
 	}
+
+	/**
+	 * Date field.
+	 *
+	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
+	 */
+	public function date() {
+		$label = parent::date()->label();
+
+		return $this->prepare_field(
+			[
+				'label'    => $label,
+				'show'     => false,
+				'readonly' => true,
+			]
+		);
+	}
+
+	/**
+	 * Sharp corners field.
+	 *
+	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
+	 */
+	public function sharp_corners() {
+		$label = parent::sharp_corners()->label();
+		$show  = parent::sharp_corners()->show();
+
+		return $this->prepare_field(
+			[
+				'label'    => $label,
+				'show'     => $show,
+				'readonly' => true,
+			]
+		);
+	}
+
 }

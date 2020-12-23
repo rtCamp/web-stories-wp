@@ -52,31 +52,15 @@ class ListView extends BaseFieldState {
 	 *
 	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
 	 */
-	public function author() {
-		$label = parent::author()->label();
-
-		return $this->prepare_field(
-			[
-				'label'    => $label,
-				'show'     => true,
-				'readonly' => false,
-			]
-		);
-	}
-
-	/**
-	 * Author field.
-	 *
-	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
-	 */
 	public function date() {
-		$label = parent::date()->label();
+		$label    = parent::date()->label();
+		$readonly = parent::date()->readonly();
 
 		return $this->prepare_field(
 			[
 				'label'    => $label,
 				'show'     => true,
-				'readonly' => false,
+				'readonly' => $readonly,
 			]
 		);
 	}
@@ -93,23 +77,6 @@ class ListView extends BaseFieldState {
 			[
 				'label'    => $label,
 				'show'     => false,
-				'readonly' => false,
-			]
-		);
-	}
-
-	/**
-	 * Archive link field.
-	 *
-	 * @return \Google\Web_Stories\Interfaces\Field|BaseField
-	 */
-	public function archive_link() {
-		$label = parent::author()->label();
-
-		return $this->prepare_field(
-			[
-				'label'    => $label,
-				'show'     => true,
 				'readonly' => false,
 			]
 		);

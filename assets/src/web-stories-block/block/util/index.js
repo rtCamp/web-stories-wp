@@ -1,11 +1,4 @@
-<?php
-/**
- * Grid view based controls state.
- *
- * @package Google\Web_Stories
- */
-
-/**
+/*
  * Copyright 2020 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,13 +14,19 @@
  * limitations under the License.
  */
 
-namespace Google\Web_Stories\Stories_Renderer\FieldState;
-
-use Google\Web_Stories\Stories_Renderer\Fields\BaseField;
-
 /**
- * Class Grid.
+ * Get current value for the provided field.
+ *
+ * @param {string} field Field to get the current value.
+ * @param {Object} state Field state of the current viewType.
+ *
+ * @return {boolean} Current value.
  */
-class GridView extends BaseFieldState {
+export const isShowing = (field, state) => {
+  if (undefined === state || !Object.entries(state).length) {
+    return false;
+  }
 
-}
+  const { show } = state[field];
+  return show;
+};
