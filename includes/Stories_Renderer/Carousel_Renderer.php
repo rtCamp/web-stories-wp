@@ -38,6 +38,13 @@ use Google\Web_Stories\Story_Post_Type;
 class Carousel_Renderer extends Renderer {
 
 	/**
+	 * Script handle.
+	 *
+	 * @var string
+	 */
+	const SCRIPT_HANDLE = 'carousel-view';
+
+	/**
 	 * Perform initial setup for object.
 	 *
 	 * @return void
@@ -59,10 +66,8 @@ class Carousel_Renderer extends Renderer {
 		parent::assets();
 
 		if ( ! $this->is_amp_request() ) {
-			// Enqueue amp runtime script and amp-carousel script to show amp-carousel on non AMP pages.
-			wp_register_script( 'amp-runtime-script', 'https://cdn.ampproject.org/v0.js', [], 'v0', true );
-			wp_register_script( 'amp-carousel-script', 'https://cdn.ampproject.org/v0/amp-carousel-0.2.js', [ 'amp-runtime-script' ], 'v0', true );
-			wp_enqueue_script( 'amp-carousel-script' );
+			$this->enqueue_script( self::SCRIPT_HANDLE );
+			$this->enqueue_style( self::SCRIPT_HANDLE );
 		}
 	}
 
@@ -164,11 +169,17 @@ class Carousel_Renderer extends Renderer {
 		<a class="web-stories-list__story-wrapper archive-link-card" href="<?php echo esc_url( $web_stories_archive ); ?>" style="--size:<?php echo esc_attr( $this->attributes['circle_size'] ); ?>px;">
 			<div class="web-stories-list__inner-wrapper">
 				<div class="web-stories-list__story-placeholder" style="--size:<?php echo esc_attr( $this->attributes['circle_size'] ); ?>px"></div>
-				<div class="story-content-overlay web-stories-list__story-content-overlay">
-					<div class="story-content-overlay__title">
-						<span><?php echo esc_html( $this->attributes['stories_archive_label'] ); ?></span>
+				<?php
+				if ( ! empty( $this->attributes['show_title'] ) ) {
+					?>
+					<div class="story-content-overlay web-stories-list__story-content-overlay">
+						<div class="story-content-overlay__title">
+							<span><?php echo esc_html( $this->attributes['stories_archive_label'] ); ?></span>
+						</div>
 					</div>
-				</div>
+					<?php
+				}
+				?>
 			</div>
 		</a>
 		<?php
