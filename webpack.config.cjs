@@ -197,6 +197,26 @@ const dashboard = {
   },
 };
 
+const webStoriesScripts = {
+  ...sharedConfig,
+  entry: {
+    lightbox: './assets/src/lightbox/index.js',
+  },
+  plugins: [
+    process.env.BUNDLE_ANALZYER && new BundleAnalyzerPlugin(),
+    new DependencyExtractionWebpackPlugin({
+      injectPolyfill: true,
+    }),
+    new MiniCssExtractPlugin({
+      filename: '../css/[name].css',
+    }),
+    new WebpackBar({
+      name: 'Web Stories Scripts',
+      color: '#357BB5',
+    }),
+  ].filter(Boolean),
+};
+
 const storyEmbedBlock = {
   ...sharedConfig,
   entry: {
@@ -293,6 +313,7 @@ const activationNotice = {
 module.exports = [
   storiesEditor,
   dashboard,
+  webStoriesScripts,
   storyEmbedBlock,
   webStoriesBlock,
   activationNotice,

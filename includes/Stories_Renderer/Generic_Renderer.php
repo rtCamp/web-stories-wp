@@ -26,8 +26,6 @@
 
 namespace Google\Web_Stories\Stories_Renderer;
 
-use Google\Web_Stories\Embed_Base;
-
 /**
  * Generic_Renderer class.
  *
@@ -53,21 +51,6 @@ class Generic_Renderer extends Renderer {
 		parent::init();
 
 		$this->assets();
-	}
-
-	/**
-	 * Enqueue assets.
-	 *
-	 * @return void
-	 */
-	public function assets() {
-
-		parent::assets();
-
-		if ( $this->is_view_type( 'grid' ) && ! $this->is_amp_request() && true !== $this->attributes['show_story_poster'] ) {
-			$this->enqueue_style( Embed_Base::STORY_PLAYER_HANDLE );
-			$this->enqueue_script( Embed_Base::STORY_PLAYER_HANDLE );
-		}
 	}
 
 	/**
@@ -100,6 +83,12 @@ class Generic_Renderer extends Renderer {
 				foreach ( $this->story_posts as $story ) {
 					$this->render_single_story_content();
 					$this->next();
+				}
+
+				if ( ! $this->is_amp_request() ) {
+					$this->render_stories_with_lightbox_noamp();
+				} else {
+					$this->render_stories_with_lightbox_amp();
 				}
 				?>
 

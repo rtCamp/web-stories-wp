@@ -81,7 +81,7 @@ class Stories_Shortcode extends \WP_UnitTestCase {
 			]
 		);
 
-		$this->assertTrue( false !== strpos( $actual, '<amp-carousel' ) );
+		$this->assertTrue( false !== strpos( $actual, 'class="web-stories-list__carousel' ) );
 	}
 
 	/**
@@ -97,7 +97,7 @@ class Stories_Shortcode extends \WP_UnitTestCase {
 			]
 		);
 
-		$this->assertTrue( false !== strpos( $actual, '<div class="web-stories-list__story-wrapper has-poster">' ) );
+		$this->assertTrue( false !== strpos( $actual, 'class="web-stories-list__story-wrapper has-poster"' ) );
 	}
 
 	/**

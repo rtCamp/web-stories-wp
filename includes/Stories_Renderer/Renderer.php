@@ -27,6 +27,7 @@
 namespace Google\Web_Stories\Stories_Renderer;
 
 use Google\Web_Stories\Interfaces\FieldState;
+use Google\Web_Stories\Embed_Base;
 use Google\Web_Stories\Interfaces\Renderer as RenderingInterface;
 use Google\Web_Stories\Model\Story;
 use Google\Web_Stories\Stories_Renderer\FieldState\BaseFieldState as GridView;
@@ -76,6 +77,13 @@ abstract class Renderer implements RenderingInterface, Iterator {
 	 * @var array An array of story posts.
 	 */
 	protected $story_posts = [];
+
+	/**
+	 * Holds required html for the lightbox.
+	 *
+	 * @var string A string of lightbox markup.
+	 */
+	protected $lightbox_html = '';
 
 	/**
 	 * Pointer to iterate over stories.
@@ -238,6 +246,16 @@ abstract class Renderer implements RenderingInterface, Iterator {
 			[],
 			WEBSTORIES_VERSION
 		);
+
+		if ( ! $this->is_amp_request() ) {
+
+			$this->enqueue_style( Embed_Base::STORY_PLAYER_HANDLE );
+			$this->enqueue_script( Embed_Base::STORY_PLAYER_HANDLE );
+
+			// Web Stories Lightbox script.
+			$this->enqueue_script( 'lightbox', [ Embed_Base::STORY_PLAYER_HANDLE ] );
+
+		}
 	}
 
 	/**
@@ -417,18 +435,22 @@ abstract class Renderer implements RenderingInterface, Iterator {
 	 */
 	public function render_single_story_content() {
 		$single_story_classes = $this->get_single_story_classes();
-		$show_story_player    = ( true !== $this->attributes['show_story_poster'] && $this->is_view_type( 'grid' ) );
+
+		$lightbox_state          = "lightbox{$this->current()->get_id()}";
+		$lightbox_set_state_attr = ( $this->is_amp_request() ) ? sprintf(
+			'on="tap:AMP.setState({%1$s: ! %1$s})"',
+			$lightbox_state
+		) : '';
 
 		?>
 
-		<div class="<?php echo esc_attr( $single_story_classes ); ?>">
+		<div
+			class="<?php echo esc_attr( $single_story_classes ); ?>"
+			<?php echo wp_kses( $lightbox_set_state_attr, 'on' ); ?>
+			style="<?php echo esc_attr( sprintf( '--size:%1$spx', $this->attributes['circle_size'] ) ); ?>"
+		>
 			<?php
-
-			if ( true === $show_story_player ) {
-				$this->render_story_with_story_player();
-			} else {
 				$this->render_story_with_poster();
-			}
 			?>
 		</div>
 		<?php
@@ -442,33 +464,45 @@ abstract class Renderer implements RenderingInterface, Iterator {
 	 */
 	protected function render_story_with_poster() {
 
-		$story_data                = $this->current();
-		$height                    = ( ! empty( $this->height ) ) ? absint( $this->height ) : 600;
-		$width                     = ( ! empty( $this->width ) ) ? absint( $this->width ) : 360;
-		$poster_url                = ( 'circles' === $this->get_view_type() ) ? $story_data->get_poster_square() : $story_data->get_poster_portrait();
-		$poster_style              = sprintf( 'background-image: url(%1$s);', esc_url_raw( $poster_url ) );
-		$list_view_image_alignment = '';
+		$story_data            = $this->current();
+		$height                = ( ! empty( $this->height ) ) ? absint( $this->height ) : 600;
+		$width                 = ( ! empty( $this->width ) ) ? absint( $this->width ) : 360;
+		$poster_url            = ( 'circles' === $this->get_view_type() ) ? $story_data->get_poster_square() : $story_data->get_poster_portrait();
+		$poster_style          = sprintf( 'background-image: url(%1$s);', esc_url_raw( $poster_url ) );
+		$inner_wrapper_classes = 'web-stories-list__inner-wrapper ';
 
 		if ( true === $this->is_view_type( 'carousel' ) ) {
 			$poster_style = sprintf( '%1$s width: %2$spx; height: %3$spx', $poster_style, (string) $width, (string) $height );
 		}
 
 		if ( ! empty( $this->attributes['list_view_image_alignment'] ) ) {
-			$list_view_image_alignment = sprintf( 'image-align-%1$s', $this->attributes['list_view_image_alignment'] );
+			$inner_wrapper_classes .= sprintf( 'image-align-%1$s', $this->attributes['list_view_image_alignment'] );
 		}
 
 		?>
-		<a class="<?php echo esc_attr( $list_view_image_alignment ); ?>"
-			href="<?php echo esc_url( $story_data->get_url() ); ?>"
-		>
+		<div class="<?php echo esc_attr( $inner_wrapper_classes ); ?>">
 			<div
 				class="web-stories-list__story-placeholder"
 				style="<?php echo esc_attr( $poster_style ); ?>"
 			></div>
 			<?php $this->get_content_overlay(); ?>
-		</a>
+		</div>
 		<?php
 
+		// Start collecting markup for the lightbox stories. This way we don't have to re-run the loop.
+		ob_start();
+
+		// Collect story links to fill-in non-AMP lightbox 'amp-story-player'.
+		if ( ! $this->is_amp_request() ) {
+			?>
+				<a href="<?php echo esc_url( $story_data->get_url() ); ?>"><?php echo esc_html( $story_data->get_title() ); ?></a>
+			<?php
+		} else {
+			// Generate lightbox html for the AMP page.
+			$this->generate_amp_lightbox_html();
+		}
+
+		$this->lightbox_html .= ob_get_clean();
 	}
 
 	/**
@@ -496,7 +530,7 @@ abstract class Renderer implements RenderingInterface, Iterator {
 
 		?>
 		<amp-story-player style="<?php echo esc_attr( $player_style ); ?>"
-			<?php echo( esc_attr( $story_player_attributes ) ); ?>>
+			<?php echo( $story_player_attributes ); // phpcs:ignore -- Outputs escaped string of attributes. ?>>
 			<a href="<?php echo esc_url( $story_data->get_url() ); ?>" style="<?php echo esc_attr( $poster_style ); ?>">
 				<?php echo esc_html( $story_data->get_title() ); ?>
 			</a>
@@ -531,7 +565,7 @@ abstract class Renderer implements RenderingInterface, Iterator {
 
 			<div class="story-content-overlay__author-date">
 				<?php if ( ! empty( $story_data->get_author() ) ) { ?>
-					<div>
+					<div class="story-content-overlay__author">
 						<?php
 
 						/* translators: %s: author name. */
@@ -555,4 +589,81 @@ abstract class Renderer implements RenderingInterface, Iterator {
 
 	}
 
+	/**
+	 * Renders the lightbox markup for non-amp pages.
+	 *
+	 * @return void
+	 */
+	protected function render_stories_with_lightbox_noamp() {
+		?>
+		<div class="web-stories-list__lightbox">
+			<amp-story-player width="0" height="0" layout="responsive">
+				<script type="application/json">
+				<?php
+				$data = [
+					'controls' => [
+						[
+							'name'     => 'close',
+							'position' => 'start',
+						],
+						[
+							'name' => 'skip-next',
+						],
+					],
+				];
+				echo wp_json_encode( $data );
+				?>
+				</script>
+				<?php echo wp_kses_post( $this->lightbox_html ); ?>
+			</amp-story-player>
+		</div>
+		<?php
+	}
+
+	/**
+	 * Markup for the lightbox used on AMP pages.
+	 *
+	 * @return void
+	 */
+	protected function generate_amp_lightbox_html() {
+		$story          = $this->current();
+		$lightbox_state = "lightbox{$story->get_id()}";
+		$lightbox_id    = "lightbox-{$story->get_id()}";
+		?>
+		<amp-lightbox
+			id="<?php echo esc_attr( $lightbox_id ); ?>"
+			[open]="<?php echo esc_attr( $lightbox_state ); ?>"
+			layout="nodisplay"
+			on="lightboxClose:AMP.setState({<?php echo esc_attr( $lightbox_state ); ?>: false})"
+		>
+			<div class="web-stories-list__lightbox show">
+				<div
+					class="story-lightbox__close-button"
+					on="tap:<?php echo esc_attr( $lightbox_id ); ?>.close"
+				>
+					<span class="story-lightbox__close-button--stick"></span>
+					<span class="story-lightbox__close-button--stick"></span>
+				</div>
+				<amp-story-player
+					width="3.6"
+					height="6"
+					layout="responsive"
+				>
+					<a href="<?php echo( esc_url( $story->get_url() ) ); ?>"><?php echo esc_html( $story->get_title() ); ?></a>
+				</amp-story-player>
+			</div>
+		</amp-lightbox>
+		<?php
+	}
+
+	/**
+	 * Renders the lightbox markup for non-amp pages.
+	 *
+	 * @return void
+	 */
+	protected function render_stories_with_lightbox_amp() {
+
+		// Have to ignore this as the escaping functions are stripping off 'amp-bind' custom attribute '[class]'.
+		echo $this->lightbox_html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Generated with properly escaped data.
+	}
 }

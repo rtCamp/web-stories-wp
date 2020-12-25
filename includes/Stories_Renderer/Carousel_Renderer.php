@@ -26,6 +26,8 @@
 
 namespace Google\Web_Stories\Stories_Renderer;
 
+use Google\Web_Stories\Story_Post_Type;
+
 /**
  * Carousel_Renderer class.
  *
@@ -90,23 +92,45 @@ class Carousel_Renderer extends Renderer {
 				class="<?php echo esc_attr( $container_classes ); ?>"
 				style="<?php echo esc_attr( $container_style ); ?>"
 			>
-				<amp-carousel
-					width="1"
-					height="1"
-					layout="intrinsic"
-					type="carousel"
-					role="region"
-					aria-label="<?php esc_attr_e( 'Web Stories', 'web-stories' ); ?>"
-				>
-					<?php
-					foreach ( $this->story_posts as $story ) {
-						$this->render_single_story_content();
-						$this->next();
-					}
+				<?php
+				if ( ! $this->is_amp_request() ) {
 					?>
-				</amp-carousel>
+					<div class="web-stories-list__carousel">
+						<?php
+						foreach ( $this->story_posts as $story ) {
+							$this->render_single_story_content();
+							$this->next();
+						}
+						$this->maybe_render_archive_link_card();
+						?>
+					</div>
+					<div tabindex="0" aria-label="<?php esc_attr_e( 'Previous', 'web-stories' ); ?>" class="glider-prev">←</div>
+					<div tabindex="0" aria-label="<?php esc_attr_e( 'Next', 'web-stories' ); ?>" class="glider-next">→</div>
+					<?php
+					$this->render_stories_with_lightbox_noamp();
+				} else {
+					?>
+					<amp-carousel
+						width="1"
+						height="1"
+						layout="intrinsic"
+						type="carousel"
+						role="region"
+						aria-label="<?php esc_attr_e( 'Basic carousel', 'web-stories' ); ?>"
+					>
+						<?php
+						foreach ( $this->story_posts as $story ) {
+							$this->render_single_story_content();
+							$this->next();
+						}
+						$this->maybe_render_archive_link_card();
+						?>
+					</amp-carousel>
+					<?php
+					$this->render_stories_with_lightbox_amp();
+				}
+				?>
 			</div>
-			<?php $this->maybe_render_archive_link(); ?>
 		</div>
 		<?php
 		$content = (string) ob_get_clean();
@@ -117,6 +141,37 @@ class Carousel_Renderer extends Renderer {
 		 * @param string $content Stories content.
 		 */
 		return apply_filters( 'web_stories_carousel_renderer_stories_content', $content );
+	}
+
+	/**
+	 * Renders web stories archive link card.
+	 *
+	 * @retrun void
+	 */
+	public function maybe_render_archive_link_card() {
+
+		if ( empty( $this->attributes['show_stories_archive_link'] ) || true !== $this->attributes['show_stories_archive_link'] ) {
+			return;
+		}
+
+		$web_stories_archive = get_post_type_archive_link( Story_Post_Type::POST_TYPE_SLUG );
+
+		if ( empty( $web_stories_archive ) || ! is_string( $web_stories_archive ) ) {
+			return;
+		}
+
+		?>
+		<a class="web-stories-list__story-wrapper archive-link-card" href="<?php echo esc_url( $web_stories_archive ); ?>" style="--size:<?php echo esc_attr( $this->attributes['circle_size'] ); ?>px;">
+			<div class="web-stories-list__inner-wrapper">
+				<div class="web-stories-list__story-placeholder" style="--size:<?php echo esc_attr( $this->attributes['circle_size'] ); ?>px"></div>
+				<div class="story-content-overlay web-stories-list__story-content-overlay">
+					<div class="story-content-overlay__title">
+						<span><?php echo esc_html( $this->attributes['stories_archive_label'] ); ?></span>
+					</div>
+				</div>
+			</div>
+		</a>
+		<?php
 	}
 
 }

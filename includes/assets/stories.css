@@ -2,7 +2,6 @@
  * Generic styles that apply to all view modes
  */
 .web-stories-list .web-stories-list__story-wrapper a {
-  color: #555555;
   text-decoration: none;
   font-size: 16px;
 }
@@ -12,11 +11,18 @@
   position: relative;
 }
 
-.web-stories-list amp-story-player,
 .web-stories-list .web-stories-list__story-wrapper.has-poster {
   width: 100%;
   max-width: 285px;
   height: auto;
+}
+
+.web-stories-list amp-story-player {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .web-stories-list .web-stories-list__story-placeholder {
@@ -57,6 +63,36 @@
   font-size: 15px;
   line-height: 22px;
   font-weight: 700;
+}
+
+/* Archive Cards */
+/* Stories archive link styles */
+.web-stories-list__archive-link {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.archive-link-card .web-stories-list__archive-link {
+  margin-top: 0;
+}
+
+.archive-link-card .web-stories-list__story-placeholder {
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='32' cy='32' r='32' transform='rotate(-180 32 32)' fill='url(%23paint0_linear)'/%3E%3Cg filter='url(%23filter0_d)' fill='%23fff'%3E%3Cpath d='M41.6 19.2a3.2 3.2 0 013.2 3.2v19.2a3.2 3.2 0 01-3.2 3.2V19.2zM17.6 19.2a3.2 3.2 0 013.2-3.2h14.4a3.2 3.2 0 013.2 3.2v25.6a3.2 3.2 0 01-3.2 3.2H20.8a3.2 3.2 0 01-3.2-3.2V19.2zM48 22.4a2.4 2.4 0 012.4 2.4v14.4a2.4 2.4 0 01-2.4 2.4V22.4z'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='13.255' y1='6.599' x2='35.289' y2='62.791' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2379B3FF'/%3E%3Cstop offset='1' stop-color='%23CBACFF'/%3E%3C/linearGradient%3E%3Cfilter id='filter0_d' x='8.96' y='10.24' width='46.08' height='46.08' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3E%3CfeOffset dy='1.28'/%3E%3CfeGaussianBlur stdDeviation='1.92'/%3E%3CfeColorMatrix values='0 0 0 0 0.423529 0 0 0 0 0.490196 0 0 0 0 0.733333 0 0 0 0.3 0'/%3E%3CfeBlend in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+.is-view-type-carousel .archive-link-card .web-stories-list__story-placeholder {
+  background-size: 80%;
+}
+
+.archive-link-card a::after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  content: '';
 }
 
 /* Grid View Styles */
@@ -140,7 +176,81 @@
   border-color: #333;
 }
 
-/* Stories archive link styles */
-.web-stories-list__archive-link {
-  margin-top: 16px;
+/* Lightbox styles */
+.web-stories-list .web-stories-list__lightbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.web-stories-list .web-stories-list__lightbox.show {
+  opacity: 1;
+  visibility: visible;
+  z-index: 99999;
+}
+
+.web-stories-list .story-lightbox__close-button {
+  display: inline-block;
+  position: fixed;
+  left: 10px;
+  top: 15px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+}
+
+.web-stories-list .story-lightbox__close-button--stick {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  height: 25px;
+  width: 3px;
+  background-color: #fff;
+  transform: rotateZ(45deg);
+}
+
+.web-stories-list .story-lightbox__close-button--stick:first-child {
+  transform: rotateZ(-45deg);
+}
+
+/*
+ * amp-story-player's 'shadow-root-intermediary' element shows black space on top,
+ * because of the 'a' links. Making 'a' absolutely positioned removes them from normal
+ * relative flow, removes the space.
+ */
+html:not([amp])
+  .web-stories-list
+  .web-stories-list__lightbox
+  amp-story-player
+  a {
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  .web-stories-list .web-stories-list__lightbox amp-story-player {
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .web-stories-list .story-lightbox__close-button {
+    top: 5px;
+    left: 0;
+  }
+
+  .web-stories-list .story-lightbox__close-button--stick {
+    top: 15px;
+    left: 20px;
+    height: 20px;
+  }
 }

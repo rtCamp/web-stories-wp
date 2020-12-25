@@ -109,6 +109,7 @@ class Generic_Renderer extends \WP_UnitTestCase_Base {
 				'stories_archive_label'     => 'View all stories',
 				'list_view_image_alignment' => 'left',
 				'class'                     => '',
+				'circle_size'               => 96,
 			]
 		);
 

@@ -109,6 +109,7 @@ class Carousel_Renderer extends \WP_UnitTestCase_Base {
 				'show_stories_archive_link' => false,
 				'stories_archive_label'     => 'View all stories',
 				'class'                     => '',
+				'circle_size'               => 96,
 			]
 		);
 
@@ -118,7 +119,6 @@ class Carousel_Renderer extends \WP_UnitTestCase_Base {
 
 		$output = $renderer->render();
 
-		$this->assertContains( 'amp-carousel', $output );
 		$this->assertContains( 'web-stories-list is-view-type-carousel alignnone', $output );
 		$this->assertContains( 'web-stories-list__story-wrapper has-poster', $output );
 		$this->assertContains( 'web-stories-list__story-placeholder', $output );
