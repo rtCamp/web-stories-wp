@@ -91,7 +91,8 @@ function BlockConfigurationPanel({
             }}
           >
             <TypeMedia>
-              <Icon icon={option.icon} />
+              {'viewType' === selectionType && <Icon icon={option.panelIcon} />}
+              {'blockType' === selectionType && <Icon icon={option.icon} />}
             </TypeMedia>
             <TypeCardBody>{option.label}</TypeCardBody>
           </TypeCard>

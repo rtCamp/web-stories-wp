@@ -18,6 +18,7 @@
  * External dependencies
  */
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 /**
  * WordPress dependencies
@@ -47,6 +48,22 @@ import {
 } from '../constants';
 import { isShowing } from '../util';
 import AuthorSelection from './authorSelection';
+
+const StyledTextArea = styled(TextControl)`
+  width: 80%;
+  margin-left: auto;
+`;
+
+const StyledNotice = styled(Notice)`
+  margin: 0 0 20px 0;
+`;
+
+const StyledToggle = styled(ToggleControl)`
+  .components-base-control__help {
+    width: 80%;
+    margin-left: auto;
+  }
+`;
 
 /**
  * StoriesInspectorControls props.
@@ -90,7 +107,7 @@ const StoriesInspectorControls = (props) => {
     showFilters = true,
   } = props;
 
-  const { fieldStates } = useConfig();
+  const { fieldStates, archiveURL } = useConfig();
 
   useEffect(() => {
     // Set default field state on load.
@@ -111,6 +128,11 @@ const StoriesInspectorControls = (props) => {
     }
   );
 
+  const archiveLink = `<a target="__blank" href="${archiveURL}">${__(
+    'View archive page',
+    'web-stories'
+  )}</a>`;
+
   const previewLink = select('core/editor').getEditedPostPreviewLink();
   const carouselMessage = sprintf(
     /* Translators: Carousel informational message. 1: Preview link. */
@@ -128,13 +150,13 @@ const StoriesInspectorControls = (props) => {
         title={__('Story settings', 'web-stories')}
       >
         {CAROUSEL_VIEW_TYPE === viewType && (
-          <Notice
+          <StyledNotice
             className="web-stories-carousel-message"
             isDismissible={false}
             status="warning"
           >
             <RawHTML>{carouselMessage}</RawHTML>
-          </Notice>
+          </StyledNotice>
         )}
 
         {fieldState[viewType] &&
@@ -143,7 +165,7 @@ const StoriesInspectorControls = (props) => {
 
             if (!readonly) {
               return (
-                <ToggleControl
+                <StyledToggle
                   key={`${field}__control`}
                   label={label}
                   checked={show}
@@ -162,6 +184,10 @@ const StoriesInspectorControls = (props) => {
                       });
                     }
                   }}
+                  help={
+                    'archive_link' === field &&
+                    show && <RawHTML>{archiveLink}</RawHTML>
+                  }
                 />
               );
             }
@@ -170,7 +196,7 @@ const StoriesInspectorControls = (props) => {
           })}
         {fieldState[viewType] &&
           isShowing('archive_link', fieldState[viewType]) && (
-            <TextControl
+            <StyledTextArea
               label={__("'View All Stories' Link label", 'web-stories')}
               value={viewAllLinkLabel}
               placeholder={__('View All Stories', 'web-stories')}

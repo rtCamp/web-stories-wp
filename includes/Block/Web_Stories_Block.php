@@ -182,6 +182,7 @@ class Web_Stories_Block {
 			'config'     => [
 				'maxNumOfStories' => $this->max_num_of_stories,
 				'editStoryURL'    => $edit_story_url,
+				'archiveURL'      => get_post_type_archive_link( $rest_base ),
 				'api'             => [
 					'stories' => sprintf( '/web-stories/v1/%s', $rest_base ),
 					'users'   => '/web-stories/v1/users/',
