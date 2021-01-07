@@ -106,7 +106,6 @@ class Carousel_Renderer extends \WP_UnitTestCase_Base {
 				'show_title'                => false,
 				'show_author'               => false,
 				'show_date'                 => false,
-				'show_story_poster'         => false,
 				'show_stories_archive_link' => false,
 				'stories_archive_label'     => 'View all stories',
 				'class'                     => '',
@@ -120,8 +119,8 @@ class Carousel_Renderer extends \WP_UnitTestCase_Base {
 		$output = $renderer->render();
 
 		$this->assertContains( 'amp-carousel', $output );
-		$this->assertContains( 'web-stories-list is-view-type-carousel alignnone', $output );
-		$this->assertContains( 'web-stories-list__story-wrapper has-poster', $output );
+		$this->assertContains( 'web-stories-list alignnone is-view-type-carousel', $output );
+		$this->assertContains( 'web-stories-list__story-wrapper', $output );
 		$this->assertContains( 'web-stories-list__story-placeholder', $output );
 
 	}
