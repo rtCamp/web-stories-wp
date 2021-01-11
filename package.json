@@ -109,7 +109,7 @@
     "@wordpress/eslint-plugin": "^7.4.0",
     "@wordpress/jest-console": "^3.10.0",
     "@wordpress/jest-puppeteer-axe": "^2.0.0",
-    "amphtml-validator": "^1.0.33",
+    "amphtml-validator": "^1.0.34",
     "axe-core": "^4.1.1",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
