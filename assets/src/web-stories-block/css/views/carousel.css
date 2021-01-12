@@ -20,15 +20,17 @@
 }
 
 .is-view-type-carousel .glider-next,
-.is-view-type-circles .glider-next {
+.is-view-type-circles .glider-next,
+.web-stories-list .amp-carousel-button-next {
   right: 0;
-  transform: translateY(-50%);
+  background-image: url('./../../icons/carousel-arrow-next.svg');
 }
 
 .is-view-type-carousel .glider-prev,
-.is-view-type-circles .glider-prev {
+.is-view-type-circles .glider-prev,
+.web-stories-list .amp-carousel-button-prev {
   left: 0;
-  transform: translateY(-50%) rotate(180deg);
+  background-image: url('./../../icons/carousel-arrow-prev.svg');
 }
 
 .is-view-type-carousel .amp-carousel-button,
@@ -39,7 +41,6 @@
 .is-view-type-circles .glider-prev {
   border-radius: 50%;
   background-color: #eaeaea;
-  background-image: url('./../../../../images/web-stories/block/carousel-arrow.svg');
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,18 +61,17 @@
   top: 50%;
 }
 
+/* Temporary till we have full support for the RTL carousel. */
+html[dir='rtl'] .glider-next.disabled,
+html[dir='rtl'] .glider-prev.disabled {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .is-view-type-carousel .glider-next:not(.disabled):hover,
 .is-view-type-carousel .glider-prev:not(.disabled):hover,
 .is-view-type-circles .glider-next:not(.disabled):hover,
-.is-view-type-circles .glider-prev:not(.disabled):hover {
-  filter: invert(1);
-}
-
-.is-view-type-carousel .amp-carousel-button-prev,
-.is-view-type-circles .amp-carousel-button-prev {
-  transform: rotate(180deg);
-}
-
+.is-view-type-circles .glider-prev:not(.disabled):hover,
 .is-view-type-carousel .amp-carousel-button:not(.amp-disabled):hover,
 .is-view-type-circles .amp-carousel-button:not(.amp-disabled):hover {
   filter: invert(1);
