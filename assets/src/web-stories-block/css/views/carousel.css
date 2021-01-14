@@ -47,7 +47,6 @@
   box-sizing: border-box;
   height: 34px;
   width: 34px;
-  margin: 16px;
   border-style: none;
   z-index: 10;
   pointer-events: all;
@@ -59,6 +58,7 @@
 .is-view-type-circles .glider-prev {
   padding: 10px;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Temporary till we have full support for the RTL carousel. */
@@ -68,6 +68,8 @@ html[dir='rtl'] .glider-prev.disabled {
   cursor: pointer;
 }
 
+html[dir='rtl'] .glider-next.disabled:hover,
+html[dir='rtl'] .glider-prev.disabled:hover,
 .is-view-type-carousel .glider-next:not(.disabled):hover,
 .is-view-type-carousel .glider-prev:not(.disabled):hover,
 .is-view-type-circles .glider-next:not(.disabled):hover,
