@@ -13,7 +13,7 @@
   "dependencies": {
     "@web-stories-wp/i18n": "*",
     "date-fns": "^2.16.1",
-    "date-fns-tz": "^1.0.12"
+    "date-fns-tz": "^1.1.2"
   },
   "devDependencies": {
     "mockdate": "^3.0.2"
