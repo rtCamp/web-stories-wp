@@ -35,6 +35,13 @@ import * as streetStyleOnTheGoStickers from './street-style-on-the-go';
 import * as plantBasedDyesStickers from './plant-based-dyes';
 import * as indoorGardenOasisStickers from './indoor-garden-oasis';
 import * as killBellyFatStickers from './belly-fat-workout';
+import * as rockInRotterdamStickers from './rock-in-rotterdam';
+import * as thingsYouDidnotKnowAboutLosAngelesStickers from './everything-you-did-not-know-about-los-angeles';
+import * as packingForHawaiiMainIslandsStickers from './what-to-pack-for-hawaii-main-islands';
+import * as googleMusicNewStudioStickers from './google-music-brand-new-studio';
+import * as contactTracingStickers from './how-it-works-contact-tracing';
+import * as summerTrendsStickers from './summer-trend-round-up';
+import * as artOnTheInternetStickers from './affordable-art-on-the-internet';
 
 export default {
   ...beautyStickers,
@@ -56,4 +63,11 @@ export default {
   ...plantBasedDyesStickers,
   ...indoorGardenOasisStickers,
   ...killBellyFatStickers,
+  ...rockInRotterdamStickers,
+  ...thingsYouDidnotKnowAboutLosAngelesStickers,
+  ...packingForHawaiiMainIslandsStickers,
+  ...googleMusicNewStudioStickers,
+  ...contactTracingStickers,
+  ...summerTrendsStickers,
+  ...artOnTheInternetStickers,
 };
