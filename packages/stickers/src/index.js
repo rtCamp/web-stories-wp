@@ -37,6 +37,7 @@ import * as indoorGardenOasisStickers from './indoor-garden-oasis';
 import * as killBellyFatStickers from './belly-fat-workout';
 import * as nycPartyRoundUpStickers from './nyc-party-round-up';
 import * as aDayInTheLifeStickers from './a-day-in-the-life';
+import * as orientExpressStickers from './venice-simplon-orient-express';
 
 export default {
   ...beautyStickers,
@@ -60,4 +61,5 @@ export default {
   ...killBellyFatStickers,
   ...nycPartyRoundUpStickers,
   ...aDayInTheLifeStickers,
+  ...orientExpressStickers,
 };
