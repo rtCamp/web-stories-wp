@@ -36,6 +36,7 @@ import * as plantBasedDyesStickers from './plant-based-dyes';
 import * as indoorGardenOasisStickers from './indoor-garden-oasis';
 import * as killBellyFatStickers from './belly-fat-workout';
 import * as nycPartyRoundUpStickers from './nyc-party-round-up';
+import * as aDayInTheLifeStickers from './a-day-in-the-life';
 
 export default {
   ...beautyStickers,
@@ -58,4 +59,5 @@ export default {
   ...indoorGardenOasisStickers,
   ...killBellyFatStickers,
   ...nycPartyRoundUpStickers,
+  ...aDayInTheLifeStickers,
 };
