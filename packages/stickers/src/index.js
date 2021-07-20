@@ -41,7 +41,7 @@ import * as packingForHawaiiMainIslandsStickers from './what-to-pack-for-hawaii-
 import * as googleMusicNewStudioStickers from './google-music-brand-new-studio';
 import * as contactTracingStickers from './how-it-works-contact-tracing';
 import * as summerTrendsStickers from './summer-trend-round-up';
-import * as artOnTheInternetStickers from './affordable-art-on-the-internet';
+import * as artOnTheInternetStickers from './where-to-buy-affordable-art-on-the-internet';
 
 export default {
   ...beautyStickers,
