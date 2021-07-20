@@ -41,6 +41,7 @@
           },
           "rotationAngle": 180,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -76,6 +77,26 @@
           "y": -240
         },
         {
+=======
+          "type": "sticker",
+          "x": -194,
+          "y": -245,
+          "width": 388,
+          "height": 373,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "id": "f2201a06-f489-4521-8b8f-07b57ad7161f"
+        },
+        {
+          "x": 225,
+          "y": 453,
+          "id": "810c630a-5b70-4ffc-9425-7430abe1db92",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+>>>>>>> templates/batch-2
           "opacity": 100,
           "flip": {
             "vertical": false,
@@ -83,6 +104,7 @@
           },
           "rotationAngle": 0,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -116,6 +138,17 @@
           "id": "4f6d91c9-bd0f-43f3-8c71-3ea4202030d8",
           "x": 225,
           "y": 453
+=======
+          "type": "sticker",
+          "width": 371,
+          "height": 356,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          }
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -355,6 +388,23 @@
           "targets": ["88973f2a-66da-4907-8014-dc6e57c926d0"],
           "duration": 2000,
           "delay": 500
+<<<<<<< HEAD
+=======
+        },
+        {
+          "id": "9d93b024-ae50-4f23-a72a-3bef7442658c",
+          "type": "effect-fade-in",
+          "targets": ["f2201a06-f489-4521-8b8f-07b57ad7161f"],
+          "duration": 2000,
+          "delay": 0
+        },
+        {
+          "id": "0e023896-053f-4cc0-adfc-a1dfb1299c84",
+          "type": "effect-fade-in",
+          "targets": ["810c630a-5b70-4ffc-9425-7430abe1db92"],
+          "duration": 2000,
+          "delay": 0
+>>>>>>> templates/batch-2
         }
       ],
       "pageTemplateType": "cover"
@@ -396,6 +446,7 @@
           },
           "rotationAngle": 45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -433,6 +484,27 @@
           "y": 166
         },
         {
+=======
+          "type": "sticker",
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "id": "f0e871c2-3cda-404d-9180-ed53d6150c8f",
+          "x": -133,
+          "y": 172
+        },
+        {
+          "x": 137,
+          "y": 172,
+          "id": "6412e96d-09bd-400e-abda-245c23cde7ac",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+>>>>>>> templates/batch-2
           "opacity": 100,
           "flip": {
             "vertical": false,
@@ -440,6 +512,7 @@
           },
           "rotationAngle": -45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -475,6 +548,17 @@
           "id": "5bfba1a9-f0f3-43e3-ba5f-a935af2ddf8d",
           "x": 136,
           "y": 166
+=======
+          "type": "sticker",
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          }
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -844,6 +928,7 @@
           },
           "rotationAngle": 45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -879,6 +964,21 @@
           "id": "b7177687-80f0-4a29-abbd-d1b5deecab48",
           "x": -134,
           "y": -40
+=======
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "id": "599eee86-ae04-4824-8b5d-268454107eb8",
+          "x": -134,
+          "y": -40,
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -888,6 +988,7 @@
           },
           "rotationAngle": -45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -923,6 +1024,21 @@
           "id": "729af4e9-d7a1-4176-8a96-70f4deaaab72",
           "x": 142,
           "y": -34
+=======
+          "x": 142,
+          "y": -40,
+          "id": "7e0ea2d2-4466-45f9-a5c0-de20d79dfadf",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -1196,6 +1312,7 @@
           },
           "rotationAngle": 180,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -1229,6 +1346,20 @@
           "id": "e878d8a8-8f4d-4532-a220-260517dd5935",
           "x": -191,
           "y": -240
+=======
+          "x": -194,
+          "y": -245,
+          "width": 388,
+          "height": 373,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "id": "1fee32e4-057c-421c-93dc-a31cccf741fb",
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -1238,6 +1369,7 @@
           },
           "rotationAngle": 0,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -1271,6 +1403,21 @@
           "id": "aa666e02-6981-4982-9e17-28958bfdacb1",
           "x": 225,
           "y": 455
+=======
+          "x": 225,
+          "y": 453,
+          "id": "a704e766-b7b4-40f2-a8e8-b98423de89b0",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "width": 371,
+          "height": 356,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -1551,6 +1698,7 @@
           },
           "rotationAngle": 45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -1586,6 +1734,21 @@
           "id": "e1f6af44-9388-49b5-8b7f-1e8d4cb0fcf0",
           "x": -132,
           "y": 166
+=======
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "id": "29c6278f-7aee-4cae-99ff-cde88f9569c7",
+          "x": -133,
+          "y": 172,
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -1595,6 +1758,7 @@
           },
           "rotationAngle": -45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -1630,6 +1794,21 @@
           "id": "3b744212-79aa-46c1-876a-2c27b032c2b8",
           "x": 136,
           "y": 166
+=======
+          "x": 137,
+          "y": 172,
+          "id": "76f59dc5-e7fd-4cff-8dd4-5d2b1c0510e4",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -1902,6 +2081,7 @@
           },
           "rotationAngle": 45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -1937,6 +2117,21 @@
           "id": "24bf46fe-1a3d-4c28-8fd3-f5fa76205166",
           "x": -134,
           "y": -40
+=======
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "id": "d580b6fc-47d0-4f59-8130-d87ea334a95d",
+          "x": -134,
+          "y": -40,
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -1946,6 +2141,7 @@
           },
           "rotationAngle": -45,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -1981,6 +2177,21 @@
           "id": "ef914ec8-9e6f-44e4-9519-f302cea4974e",
           "x": 142,
           "y": -34
+=======
+          "x": 142,
+          "y": -40,
+          "id": "2a9f8c11-0c79-4d0f-b857-00f7bbb5e769",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "width": 382,
+          "height": 367,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -2852,6 +3063,7 @@
             "vertical": false,
             "horizontal": false
           },
+<<<<<<< HEAD
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "scale": 100,
@@ -2887,6 +3099,22 @@
           "id": "7dfa5708-5418-485a-83d1-560ea21a985a",
           "x": 225,
           "y": 453
+=======
+          "rotationAngle": 180,
+          "lockAspectRatio": true,
+          "x": -194,
+          "y": -245,
+          "width": 388,
+          "height": 373,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "id": "8d557a70-608c-4322-a840-bbc774586389",
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -2894,6 +3122,7 @@
             "vertical": false,
             "horizontal": false
           },
+<<<<<<< HEAD
           "rotationAngle": 180,
           "lockAspectRatio": true,
           "scale": 100,
@@ -2929,6 +3158,23 @@
           "id": "9bebc2bf-9135-4720-8189-1773b8c5dc42",
           "x": -191,
           "y": -240
+=======
+          "rotationAngle": 0,
+          "lockAspectRatio": true,
+          "x": 225,
+          "y": 453,
+          "id": "89ef9084-9e75-455e-a7d6-0fc5b07ac60b",
+          "basedOn": "f2201a06-f489-4521-8b8f-07b57ad7161f",
+          "width": 371,
+          "height": 356,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker"
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -3208,6 +3454,7 @@
           },
           "rotationAngle": 180,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -3241,6 +3488,21 @@
           "id": "34d647d4-865c-47d3-aa8c-4be624fe08b7",
           "x": -191,
           "y": -240
+=======
+          "width": 388,
+          "height": 373,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker",
+          "basedOn": "1fee32e4-057c-421c-93dc-a31cccf741fb",
+          "id": "a03cdc6a-ee6a-4f5f-a9f2-6d35e6ba7726",
+          "x": -194,
+          "y": -245
+>>>>>>> templates/batch-2
         },
         {
           "opacity": 100,
@@ -3250,6 +3512,7 @@
           },
           "rotationAngle": 0,
           "lockAspectRatio": true,
+<<<<<<< HEAD
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -3281,6 +3544,19 @@
           },
           "basedOn": "d48d03d4-ef10-4faf-80ea-82bd9c5370ed",
           "id": "908a6d88-e670-40cf-8139-dd736c143582",
+=======
+          "width": 371,
+          "height": 356,
+          "scale": 100,
+          "focalX": 50,
+          "focalY": 50,
+          "sticker": {
+            "type": "ornament"
+          },
+          "type": "sticker",
+          "basedOn": "a704e766-b7b4-40f2-a8e8-b98423de89b0",
+          "id": "eeb6cb89-2349-4b57-a798-92b9443d911f",
+>>>>>>> templates/batch-2
           "x": 225,
           "y": 453
         },
