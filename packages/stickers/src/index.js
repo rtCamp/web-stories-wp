@@ -24,7 +24,6 @@ import * as fashionOnTheGoStickers from './fashion-on-the-go';
 import * as noDaysOffStickers from './no-days-off';
 import * as experienceThailandStickers from './experience-thailand';
 import * as wellbeingSleepStickers from './sleep';
-import * as crownSeasonsRecappedStickers from './crown-seasons-recapped';
 import * as guideTobakingBreadStickers from './baking-bread-guide';
 import * as sangriaArtichokeStickers from './sangria-artichoke';
 import * as crispyChickenThighStickers from './kitchen-stories';
@@ -35,13 +34,6 @@ import * as bestFitnessAppsStickers from './best-fitness-apps';
 import * as streetStyleOnTheGoStickers from './street-style-on-the-go';
 import * as plantBasedDyesStickers from './plant-based-dyes';
 import * as indoorGardenOasisStickers from './indoor-garden-oasis';
-import * as killBellyFatStickers from './kill-belly-fat';
-import * as honeymooningInItalyStickers from './honeymooning-in-italy';
-import * as stayAtAceHotelKyotoStickers from './stay-at-ace-hotel-kyoto';
-import * as videoCallsSavedTheDayStickers from './how-video-calls-saved-the-day';
-import * as pickTheRightLaptopStickers from './pick-the-right-laptop';
-import * as quizForYourBestSkinStickers from './quiz-for-your-best-skin';
-import * as atHomeOfficeStickers from './diy-budget-friendly-home-office';
 import * as rockInRotterdamStickers from './rock-in-rotterdam';
 import * as thingsYouDidnotKnowAboutLosAngelesStickers from './everything-you-did-not-know-about-los-angeles';
 import * as packingForHawaiiMainIslandsStickers from './what-to-pack-for-hawaii-main-islands';
@@ -59,6 +51,14 @@ import * as insideJeanLegeresClosetStickers from './inside-jean-legeres-closet';
 import * as facialsYouCanTryAtHomeStickers from './facials-to-try-at-home';
 import * as giftGuideArtBooksStickers from './gift-guide-art-books';
 import * as vintageChairsWhatToLookForStickers from './vintage-chairs-what-to-look-for';
+import * as killBellyFatStickers from './belly-fat-workout';
+import * as crownSeasonsRecappedStickers from './tv-show-recap';
+import * as honeymooningInItalyStickers from './honeymooning-in-italy';
+import * as stayAtAceHotelKyotoStickers from './ace-hotel-kyoto-review';
+import * as videoCallsSavedTheDayStickers from './how-video-calls-saved-the-day';
+import * as pickTheRightLaptopStickers from './laptop-buying-guide';
+import * as quizForYourBestSkinStickers from './beauty-quiz';
+import * as atHomeOfficeStickers from './diy-home-office';
 
 export default {
   ...beautyStickers,
