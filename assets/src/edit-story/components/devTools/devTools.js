@@ -166,6 +166,7 @@ const prepareTemplate = (state) => {
         }
         return newElement;
       }),
+      pageTemplateType: page?.pageTemplateType ?? '',
     })),
   };
 
@@ -179,9 +180,10 @@ function DevTools() {
   const [isTemplate, setIsTemplate] = useState(false);
   const { showSnackbar } = useSnackbar();
   const textareaRef = useRef();
-  const {
-    internal: { reducerState, restore },
-  } = useStory();
+  const { reducerState, restore } = useStory(({ internal }) => ({
+    reducerState: internal.reducerState,
+    restore: internal.restore,
+  }));
 
   const {
     pages,
