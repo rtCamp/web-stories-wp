@@ -344,7 +344,7 @@
           "focalY": 50,
           "type": "text",
           "id": "643dd508-0499-4c8e-adab-b48039c98296",
-          "content": "<span style=\"color: rgba(43, 57, 62, 1); text-transform: uppercase\">-\nDalai Lama</span>",
+          "content": "<span style=\"color: rgba(43, 57, 62, 1); text-transform: uppercase\">-</span>\n<span style=\"color: rgba(43, 57, 62, 1); text-transform: uppercase\">Dalai Lama</span>",
           "fontSize": 15,
           "padding": { "horizontal": 0, "vertical": 0 }
         },

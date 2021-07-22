@@ -2717,7 +2717,7 @@
           "lineHeight": 1,
           "textAlign": "initial",
           "padding": { "locked": true, "hasHiddenPadding": false },
-          "content": "<span style=\"color: #f4e6b0; letter-spacing: 0.1em\">Top 10</span>\n<span style=\"color: #f4e6b0; letter-spacing: 0.1em\">Dancers</span>",
+          "content": "<span style=\"color: #f4e6b0; letter-spacing: 0.1em; text-transform: uppercase\">Top 10</span>\n<span style=\"color: #f4e6b0; letter-spacing: 0.1em; text-transform: uppercase\">Dancers</span>",
           "fontWeight": 400,
           "borderRadius": {
             "locked": true,
@@ -3523,7 +3523,7 @@
           "lineHeight": 1,
           "textAlign": "initial",
           "padding": { "locked": true, "hasHiddenPadding": false },
-          "content": "<span style=\"color: #fee2c6; letter-spacing: 0.1em; text-transform: uppercase\">That<span style=\"color: #fee2c6; letter-spacing: 0.1em\">'s</span></span>\n<span style=\"color: #fee2c6; letter-spacing: 0.1em; text-transform: uppercase\">Flow!</span>",
+          "content": "<span style=\"color: #fee2c6; letter-spacing: 0.1em; text-transform: uppercase\">That's</span>\n<span style=\"color: #fee2c6; letter-spacing: 0.1em; text-transform: uppercase\">Flow!</span>",
           "fontWeight": 400,
           "borderRadius": {
             "locked": true,

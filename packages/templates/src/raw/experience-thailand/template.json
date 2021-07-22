@@ -512,7 +512,7 @@
           "focalX": 50,
           "focalY": 50,
           "id": "6258d646-a291-498f-81ab-3095f352bb26",
-          "content": "<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Street\nFood</span>",
+          "content": "<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Street</span>\n<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Food</span>",
           "fontSize": 52,
           "padding": { "horizontal": 0, "vertical": 0 }
         }
@@ -914,7 +914,7 @@
           "focalX": 50,
           "focalY": 50,
           "id": "c40c8eae-e683-4fa6-a632-e1d652279a37",
-          "content": "<span style=\"color: rgba(255, 255, 255, 1); text-transform: uppercase\">Top 5\nChiang Mai</span>",
+          "content": "<span style=\"color: rgba(255, 255, 255, 1); text-transform: uppercase\">Top 5</span>\n<span style=\"color: rgba(255, 255, 255, 1); text-transform: uppercase\">Chiang Mai</span>",
           "fontSize": 54,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
@@ -1046,7 +1046,7 @@
           "focalY": 50,
           "basedOn": "6258d646-a291-498f-81ab-3095f352bb26",
           "id": "3932eb5c-e456-43d8-988d-4aa01dd4a8bd",
-          "content": "<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Temple\nName</span>",
+          "content": "<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Temple</span>\n<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Name</span>",
           "fontSize": 52,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
@@ -1287,7 +1287,7 @@
           "focalY": 50,
           "basedOn": "3cf17fb8-a5ae-4f32-8e5f-d3a0513215de",
           "id": "28b135fd-63b8-456c-985d-3dfe542fffd7",
-          "content": "<span style=\"color: rgba(255, 255, 255, 1); text-transform: uppercase\">Learn\nMore</span>",
+          "content": "<span style=\"color: rgba(255, 255, 255, 1); text-transform: uppercase\">Learn</span>\n<span style=\"color: rgba(255, 255, 255, 1); text-transform: uppercase\">More</span>",
           "fontSize": 20,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
@@ -1314,7 +1314,7 @@
           "focalY": 50,
           "basedOn": "6258d646-a291-498f-81ab-3095f352bb26",
           "id": "30716193-c4ff-4619-b485-8108d250c8b8",
-          "content": "<span style=\"text-transform: uppercase\">Island\nHopping</span>",
+          "content": "<span style=\"text-transform: uppercase\">Island</span>\n<span style=\"text-transform: uppercase\">Hopping</span>",
           "fontSize": 52,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
@@ -1987,7 +1987,7 @@
           "focalY": 50,
           "basedOn": "840cd415-bf08-4186-9649-932beb2e6778",
           "id": "7ea7ab1b-9bcd-45d6-941d-2c1143cadf0f",
-          "content": "<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">5 Spiciest\nDishes</span>",
+          "content": "<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">5 Spiciest</span>\n<span style=\"color: rgba(9, 66, 40, 1); text-transform: uppercase\">Dishes</span>",
           "fontSize": 20,
           "padding": { "horizontal": 0, "vertical": 0 }
         },

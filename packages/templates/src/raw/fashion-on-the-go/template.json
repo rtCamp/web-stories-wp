@@ -222,7 +222,7 @@
           "focalX": 50,
           "focalY": 50,
           "id": "d773925c-2f95-44c0-9b0e-0743d45476f2",
-          "content": "<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">“When we dress well, We naturally boost our confidence”</span>",
+          "content": "<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">“When we dress well, we naturally boost our confidence”</span>",
           "fontSize": 50,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
@@ -584,7 +584,7 @@
           "focalY": 50,
           "type": "text",
           "id": "64b41c08-0817-4b98-aa55-0aaa9ea205e8",
-          "content": "<span style=\"color: #212121; letter-spacing: -0.01em\">MJ</span>\n<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">Kepler</span>",
+          "content": "<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">MJ</span>\n<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">Kepler</span>",
           "fontSize": 37,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
@@ -2773,7 +2773,7 @@
           "type": "text",
           "basedOn": "2c548d81-abe2-4f74-9292-9910382fb293",
           "id": "1043803d-625c-4b7a-a5ad-1cdecfbb1c62",
-          "content": "<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">How to pull off the</span>\n<span style=\"letter-spacing: -0.01em; text-transform: uppercase\">All Denim look</span>",
+          "content": "<span style=\"color: #212121; letter-spacing: -0.01em; text-transform: uppercase\">How to pull off the</span>\n<span style=\"letter-spacing: -0.01em; text-transform: uppercase\">all denim look</span>",
           "fontSize": 20,
           "padding": { "horizontal": 0, "vertical": 0 }
         },
