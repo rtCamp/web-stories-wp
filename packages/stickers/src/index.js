@@ -35,6 +35,15 @@ import * as streetStyleOnTheGoStickers from './street-style-on-the-go';
 import * as plantBasedDyesStickers from './plant-based-dyes';
 import * as indoorGardenOasisStickers from './indoor-garden-oasis';
 import * as killBellyFatStickers from './belly-fat-workout';
+import * as meetJanePopularStickers from './meet-jane-popular';
+import * as rvSummerAdventureStickers from './rv-summer-adventure';
+import * as soloSundayInYourCityStickers from './solo-sunday-in-your-city';
+import * as homeVideoStudioStickers from './home-video-studio';
+import * as selfDrivingCarsStickers from './the-ins-and-outs-of-self-driving-cars';
+import * as theBoolsQuizStickers from './the-bools-quiz';
+import * as sustainabilityTipsStickers from './sustainability-tips';
+import * as baquosPaintingsStickers from './baquos-paintings';
+import * as outdoorLuauStickers from './outdoor-luau';
 
 export default {
   ...beautyStickers,
@@ -56,4 +65,13 @@ export default {
   ...plantBasedDyesStickers,
   ...indoorGardenOasisStickers,
   ...killBellyFatStickers,
+  ...meetJanePopularStickers,
+  ...rvSummerAdventureStickers,
+  ...soloSundayInYourCityStickers,
+  ...homeVideoStudioStickers,
+  ...selfDrivingCarsStickers,
+  ...theBoolsQuizStickers,
+  ...sustainabilityTipsStickers,
+  ...baquosPaintingsStickers,
+  ...outdoorLuauStickers,
 };
