@@ -53,7 +53,7 @@ class Editor extends Service_Base {
 	 *
 	 * @var string
 	 */
-	const SCRIPT_HANDLE = 'story-editor';
+	const SCRIPT_HANDLE = 'wp-story-editor';
 
 	/**
 	 * Experiments instance.

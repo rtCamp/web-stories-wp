@@ -58,6 +58,7 @@
     "@web-stories-wp/tracking": "*",
     "@web-stories-wp/units": "*",
     "@web-stories-wp/widget": "*",
+    "@web-stories-wp/wp-story-editor": "*",
     "@wordpress/api-fetch": "^5.2.0",
     "classnames": "^2.3.1",
     "colorthief": "^2.3.2",

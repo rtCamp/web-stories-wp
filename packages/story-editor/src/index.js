@@ -24,3 +24,9 @@ export { default as FontContext } from './app/font/context';
 export { default as useLoadFontFiles } from './app/font/actions/useLoadFontFiles';
 export { default as localStore } from './utils/localStore';
 export { default as StoryPropTypes } from './types';
+
+/**
+ * Internal dependencies
+ */
+import App from './editorApp';
+export default App;
