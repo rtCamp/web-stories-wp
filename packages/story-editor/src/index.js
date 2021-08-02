@@ -14,11 +14,9 @@
  * limitations under the License.
  */
 
-// Every thing above this line needs to be moved to wp-story-editor package.
-
-export * from './components/transform'; // TransformProvider
-export * from './app/config'; // useConfig
-export * from './components/previewPage'; // PreviewPage
+export * from './components/transform';
+export * from './app/config';
+export * from './components/previewPage';
 
 export { default as base64Encode } from './utils/base64Encode';
 export { default as getStoryPropsToSave } from './app/story/utils/getStoryPropsToSave';
