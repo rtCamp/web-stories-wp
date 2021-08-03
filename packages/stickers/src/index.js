@@ -57,6 +57,15 @@ import * as insideJeanLegeresClosetStickers from './inside-jean-legeres-closet';
 import * as facialsYouCanTryAtHomeStickers from './facials-to-try-at-home';
 import * as giftGuideArtBooksStickers from './gift-guide-art-books';
 import * as vintageChairsWhatToLookForStickers from './vintage-chairs-what-to-look-for';
+import * as meetJanePopularStickers from './meet-jane-popular';
+import * as rvSummerAdventureStickers from './rv-summer-adventure';
+import * as soloSundayInYourCityStickers from './solo-sunday-in-your-city';
+import * as homeVideoStudioStickers from './home-video-studio';
+import * as selfDrivingCarsStickers from './the-ins-and-outs-of-self-driving-cars';
+import * as theBoolsQuizStickers from './the-bools-quiz';
+import * as sustainabilityTipsStickers from './sustainability-tips';
+import * as baquosPaintingsStickers from './baquos-paintings';
+import * as outdoorLuauStickers from './outdoor-luau';
 
 export default {
   ...beautyStickers,
@@ -100,4 +109,13 @@ export default {
   ...facialsYouCanTryAtHomeStickers,
   ...giftGuideArtBooksStickers,
   ...vintageChairsWhatToLookForStickers,
+  ...meetJanePopularStickers,
+  ...rvSummerAdventureStickers,
+  ...soloSundayInYourCityStickers,
+  ...homeVideoStudioStickers,
+  ...selfDrivingCarsStickers,
+  ...theBoolsQuizStickers,
+  ...sustainabilityTipsStickers,
+  ...baquosPaintingsStickers,
+  ...outdoorLuauStickers,
 };
