@@ -60,12 +60,12 @@ import * as vintageChairsWhatToLookForStickers from './vintage-chairs-what-to-lo
 import * as meetJanePopularStickers from './meet-jane-popular';
 import * as rvSummerAdventureStickers from './rv-summer-adventure';
 import * as soloSundayInYourCityStickers from './solo-sunday-in-your-city';
-import * as homeVideoStudioStickers from './home-video-studio';
-import * as selfDrivingCarsStickers from './the-ins-and-outs-of-self-driving-cars';
+import * as technologyAdviceStickers from './technology-advice';
+import * as allAboutCarsStickers from './all-about-cars';
 import * as theBoolsQuizStickers from './the-bools-quiz';
 import * as sustainabilityTipsStickers from './sustainability-tips';
-import * as baquosPaintingsStickers from './baquos-paintings';
-import * as outdoorLuauStickers from './outdoor-luau';
+import * as anArtistsLegacyStickers from './an-artists-legacy';
+import * as hawaiiInYourBackyardLuauStickers from './hawaii-in-your-backyard';
 
 export default {
   ...beautyStickers,
@@ -112,10 +112,10 @@ export default {
   ...meetJanePopularStickers,
   ...rvSummerAdventureStickers,
   ...soloSundayInYourCityStickers,
-  ...homeVideoStudioStickers,
-  ...selfDrivingCarsStickers,
+  ...technologyAdviceStickers,
+  ...allAboutCarsStickers,
   ...theBoolsQuizStickers,
   ...sustainabilityTipsStickers,
-  ...baquosPaintingsStickers,
-  ...outdoorLuauStickers,
+  ...anArtistsLegacyStickers,
+  ...hawaiiInYourBackyardLuauStickers,
 };
