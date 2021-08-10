@@ -19,14 +19,12 @@
  */
 import { __ } from '@web-stories-wp/i18n';
 import { useCallback, useState } from 'react';
-import { useFeatures } from 'flagged';
 import { getTimeTracker } from '@web-stories-wp/tracking';
 import { useSnackbar } from '@web-stories-wp/design-system';
 
 /**
  * Internal dependencies
  */
-import objectPick from '../../../utils/objectPick';
 import { useAPI } from '../../api';
 import { useConfig } from '../../config';
 import useRefreshPostEditURL from '../../../utils/useRefreshPostEditURL';
@@ -50,7 +48,6 @@ function useSaveStory({ storyId, pages, story, updateStory }) {
   const {
     actions: { resetNewChanges },
   } = useHistory();
-  const flags = useFeatures();
   const { metadata } = useConfig();
   const { showSnackbar } = useSnackbar();
   const [isSaving, setIsSaving] = useState(false);
@@ -71,22 +68,24 @@ function useSaveStory({ storyId, pages, story, updateStory }) {
 
       return saveStoryById({
         storyId,
-        ...getStoryPropsToSave({ story, pages, metadata, flags }),
+        ...getStoryPropsToSave({ story, pages, metadata }),
         ...props,
       })
-        .then((post) => {
+        .then((data) => {
           const properties = {
-            ...objectPick(post, ['status', 'slug', 'link']),
-            featuredMediaUrl: post.featured_media_url,
-            previewLink: post.preview_link,
-            editLink: post.edit_link,
-            embedPostLink: post.embed_post_link,
+            status: data.status,
+            slug: data.slug,
+            link: data.link,
+            featuredMediaUrl: data.featured_media_url,
+            previewLink: data.preview_link,
+            editLink: data.edit_link,
+            embedPostLink: data.embed_post_link,
           };
           updateStory({ properties });
 
           refreshPostEditURL();
 
-          const isStoryPublished = ['publish', 'future'].includes(post.status);
+          const isStoryPublished = ['publish', 'future'].includes(data.status);
           setIsFreshlyPublished(!isStoryAlreadyPublished && isStoryPublished);
         })
         .catch(() => {
@@ -104,7 +103,6 @@ function useSaveStory({ storyId, pages, story, updateStory }) {
     [
       story,
       pages,
-      flags,
       metadata,
       saveStoryById,
       storyId,
