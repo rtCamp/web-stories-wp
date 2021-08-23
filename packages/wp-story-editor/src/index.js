@@ -44,6 +44,7 @@ import {
   useCaptionMediaPicker,
   useLibraryMediaPicker,
 } from './media';
+import PostPublishDialog from './components/postPublishDialog';
 import './style.css'; // This way the general editor styles are loaded before all the component styles.
 
 /**
@@ -79,6 +80,7 @@ const initialize = (id, settings, flags) => {
         <StoryEditor settings={settings} config={config}>
           <PostLock />
           <StatusCheck />
+          <PostPublishDialog />
         </StoryEditor>
       </StrictMode>
     </FlagsProvider>,
