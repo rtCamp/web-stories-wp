@@ -122,6 +122,7 @@ async function getTemplates(imageBaseUrl) {
     'technology-advice',
     'sports-quiz',
     'sustainability-tips',
+    'an-artists-legacy',
   ];
 
   const trackTiming = getTimeTracker('load_templates');
