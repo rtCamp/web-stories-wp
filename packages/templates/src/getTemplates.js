@@ -123,6 +123,7 @@ async function getTemplates(imageBaseUrl) {
     'sports-quiz',
     'sustainability-tips',
     'an-artists-legacy',
+    'tips-for-throwing-an-outdoor-luau',
   ];
 
   const trackTiming = getTimeTracker('load_templates');

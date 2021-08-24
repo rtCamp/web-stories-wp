@@ -415,7 +415,8 @@
             "alt": "Video Footage Of A Male Photographer In Action",
             "local": false,
             "isPlaceholder": false,
-            "isOptimized": false,
+            "isOptimized": true,
+            "isMuted": true,
             "provider": "local",
             "baseColor": [130, 110, 85]
           },
@@ -1582,7 +1583,8 @@
             "alt": "A Man With A Camera On Hand Spinning The Chair He Is Sitting On",
             "local": false,
             "isPlaceholder": false,
-            "isOptimized": false,
+            "isOptimized": true,
+            "isMuted": true,
             "provider": "local",
             "baseColor": [133, 114, 91]
           },
@@ -2766,8 +2768,8 @@
             "sizes": [],
             "local": false,
             "isPlaceholder": false,
-            "isOptimized": false,
-            "isMuted": false,
+            "isOptimized": true,
+            "isMuted": true,
             "baseColor": [124, 104, 80]
           },
           "controls": false,
@@ -3412,7 +3414,8 @@
             "alt": "A Male Photographer Checking And Testing His Camera",
             "local": false,
             "isPlaceholder": false,
-            "isOptimized": false,
+            "isOptimized": true,
+            "isMuted": true,
             "provider": "local",
             "baseColor": [132, 112, 86]
           },
@@ -3700,7 +3703,8 @@
             "alt": "Video Footage Of A Male Photographer In Action",
             "local": false,
             "isPlaceholder": false,
-            "isOptimized": false,
+            "isOptimized": true,
+            "isMuted": true,
             "provider": "local",
             "baseColor": [130, 110, 85]
           },
