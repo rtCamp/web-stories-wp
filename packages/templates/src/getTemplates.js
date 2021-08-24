@@ -118,6 +118,7 @@ async function getTemplates(imageBaseUrl) {
     'celebrity-life-story',
     'series-best-of',
     'summer-adventure-guide',
+    'one-day-city-itinerary',
   ];
 
   const trackTiming = getTimeTracker('load_templates');
