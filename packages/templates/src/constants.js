@@ -66,4 +66,5 @@ export const TEMPLATE_NAMES = [
   'art-books-gift-guide',
   'vintage-chairs-buying-guide',
   'celebrity-life-story',
+  'series-best-of',
 ];
