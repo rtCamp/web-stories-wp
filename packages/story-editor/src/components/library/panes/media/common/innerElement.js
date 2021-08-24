@@ -17,7 +17,7 @@
  * External dependencies
  */
 import styled, { css } from 'styled-components';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from '@web-stories-wp/react';
 import PropTypes from 'prop-types';
 import {
   getSmallestUrlForWidth,
@@ -175,7 +175,7 @@ function InnerElement({
     muted: true,
     preload: 'metadata',
     poster: displayPoster,
-    showWithoutDelay: Boolean(newVideoPosterRef.current),
+    showWithoutDelay: !poster || Boolean(newVideoPosterRef.current),
   };
 
   if (type === ContentType.IMAGE) {
@@ -201,7 +201,7 @@ function InnerElement({
             />
           )}
         </Video>
-        {!newVideoPosterRef.current && (
+        {displayPoster && (
           /* eslint-disable-next-line styled-components-a11y/alt-text -- False positive. */
           <HiddenPosterImage
             ref={hiddenPoster}

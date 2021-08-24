@@ -18,7 +18,13 @@
  * External dependencies
  */
 import PropTypes from 'prop-types';
-import { useEffect, useReducer, useRef, useState } from 'react';
+import {
+  useEffect,
+  useReducer,
+  useRef,
+  useState,
+  useFocusOut,
+} from '@web-stories-wp/react';
 import styled, { css } from 'styled-components';
 import {
   themeHelpers,
@@ -27,7 +33,6 @@ import {
   BUTTON_SIZES,
   ThemeGlobals,
 } from '@web-stories-wp/design-system';
-import { useFocusOut } from '@web-stories-wp/react';
 import { STORY_ANIMATION_STATE } from '@web-stories-wp/animation';
 import {
   PreviewErrorBoundary,
@@ -125,6 +130,7 @@ const CardPreviewContainer = ({
   centerAction,
   bottomAction,
   topAction,
+  slug = '',
   story,
   pageSize,
   ariaLabel,
@@ -189,6 +195,7 @@ const CardPreviewContainer = ({
       <EditControls
         aria-label={ariaLabel}
         data-testid="card-action-container"
+        data-template-slug={slug}
         ref={containElem}
         cardSize={pageSize}
         isActive={CARD_STATE.ACTIVE === cardState}
@@ -263,6 +270,7 @@ CardPreviewContainer.propTypes = {
   topAction: ActionButtonPropType,
   containerAction: PropTypes.func,
   pageSize: PageSizePropType.isRequired,
+  slug: PropTypes.string,
   story: StoryPropType,
   tabIndex: PropTypes.number,
 };

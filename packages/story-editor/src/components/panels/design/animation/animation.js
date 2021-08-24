@@ -17,11 +17,16 @@
 /**
  * External dependencies
  */
-import { useCallback, useMemo, useEffect, useRef } from 'react';
+import {
+  useCallback,
+  useMemo,
+  useEffect,
+  useRef,
+  useDebouncedCallback,
+  shallowEqual,
+} from '@web-stories-wp/react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
-import { shallowEqual } from 'react-pure-render';
-import { useDebouncedCallback } from '@web-stories-wp/react';
 import { __ } from '@web-stories-wp/i18n';
 import styled from 'styled-components';
 import { Text, THEME_CONSTANTS } from '@web-stories-wp/design-system';
@@ -42,7 +47,7 @@ import {
 import StoryPropTypes, { AnimationPropType } from '../../../../types';
 import { Row } from '../../../form';
 import { SimplePanel } from '../../panel';
-import { states, styles, useFocusHighlight } from '../../../../app/highlights';
+import { states, styles, useHighlights } from '../../../../app/highlights';
 import EffectPanel, { getEffectName, getEffectDirection } from './effectPanel';
 import { EffectChooserDropdown } from './effectChooserDropdown';
 
@@ -78,8 +83,12 @@ function AnimationPanel({
   updateAnimationState,
 }) {
   const playUpdatedAnimation = useRef(false);
-  const dropdownRef = useRef(null);
-  const highlight = useFocusHighlight(states.ANIMATION, dropdownRef);
+
+  const { highlight, resetHighlight } = useHighlights((state) => ({
+    highlight: state[states.ANIMATION],
+    resetHighlight: state.onFocusOut,
+    cancelHighlight: state.cancelEffect,
+  }));
 
   const isBackground =
     selectedElements.length === 1 && selectedElements[0].isBackground;
@@ -239,12 +248,17 @@ function AnimationPanel({
       name="animation"
       title={__('Animation', 'web-stories')}
       css={highlight?.showEffect && styles.FLASH}
+      onAnimationEnd={() => resetHighlight()}
       isPersistable={!highlight}
     >
       <GroupWrapper hasAnimation={selectedEffectTitle}>
         <StyledRow>
           <EffectChooserDropdown
-            ref={dropdownRef}
+            ref={(node) => {
+              if (node && highlight?.focus && highlight?.showEffect) {
+                node.focus();
+              }
+            }}
             onAnimationSelected={handleAddOrUpdateElementEffect}
             onNoEffectSelected={handleRemoveEffect}
             isBackgroundEffects={isBackground}

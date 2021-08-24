@@ -18,8 +18,7 @@
  * External dependencies
  */
 import PropTypes from 'prop-types';
-import { useMemo } from 'react';
-import { createContext } from '@web-stories-wp/react';
+import { useMemo, createContext } from '@web-stories-wp/react';
 
 /**
  * Internal dependencies
@@ -49,7 +48,6 @@ export default function ApiProvider({ children }) {
 
   const { stories, api: storyApi } = useStoryApi(dataAdapter, {
     storyApi: api.stories,
-    encodeMarkup,
   });
 
   const { media, api: mediaApi } = useMediaApi(dataAdapter, {

@@ -17,7 +17,13 @@
  * External dependencies
  */
 import PropTypes from 'prop-types';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from '@web-stories-wp/react';
 import styled, { css } from 'styled-components';
 import { v4 as uuidv4 } from 'uuid';
 import { __ } from '@web-stories-wp/i18n';
@@ -54,6 +60,8 @@ const separatorCSS = css`
   width: 100%;
   height: 1px;
   background-color: ${({ theme }) => theme.colors.divider.primary};
+  margin: 8px 0;
+
   ${({ isIconMenu, theme }) =>
     isIconMenu &&
     css`
@@ -86,7 +94,7 @@ const MenuList = styled.ul`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 8px 16px;
+      padding: 2px 16px;
       border: 0;
       transition: background-color ${BUTTON_TRANSITION_TIMING};
     }

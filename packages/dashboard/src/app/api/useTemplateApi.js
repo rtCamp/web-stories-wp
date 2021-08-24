@@ -17,7 +17,7 @@
 /**
  * External dependencies
  */
-import { useCallback, useMemo, useReducer } from 'react';
+import { useCallback, useMemo, useReducer } from '@web-stories-wp/react';
 import { toUTCDate } from '@web-stories-wp/date';
 import { addQueryArgs } from '@web-stories-wp/design-system';
 import getAllTemplates from '@web-stories-wp/templates';
@@ -35,6 +35,7 @@ import { ERRORS } from '../textContent';
 export function reshapeTemplateObject(isLocal) {
   return ({
     id,
+    slug,
     title,
     modified,
     tags,
@@ -49,6 +50,7 @@ export function reshapeTemplateObject(isLocal) {
     title,
     createdBy,
     description,
+    slug,
     status: 'template',
     modified: toUTCDate(modified),
     tags,

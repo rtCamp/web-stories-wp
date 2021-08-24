@@ -17,13 +17,16 @@
 /**
  * External dependencies
  */
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
   useDebouncedCallback,
   useBatchingCallback,
 } from '@web-stories-wp/react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { __ } from '@web-stories-wp/i18n';
 import { Input, Text, THEME_CONSTANTS } from '@web-stories-wp/design-system';
 
@@ -42,7 +45,7 @@ import {
   inputContainerStyleOverride,
   useCommonObjectValue,
 } from '../../shared';
-import { states, styles, useFocusHighlight } from '../../../../app/highlights';
+import { states, styles, useHighlights } from '../../../../app/highlights';
 
 const IconInfo = styled.div`
   display: flex;
@@ -72,8 +75,13 @@ function LinkPanel({ selectedElements, pushUpdateForObject }) {
     currentPage: state.state.currentPage,
   }));
 
-  const linkRef = useRef(null);
-  const highlight = useFocusHighlight(states.LINK, linkRef);
+  const { highlight, resetHighlight, cancelHighlight } = useHighlights(
+    (state) => ({
+      highlight: state[states.LINK],
+      resetHighlight: state.onFocusOut,
+      cancelHighlight: state.cancelEffect,
+    })
+  );
 
   const { getElementsInAttachmentArea } = useElementsWithLinks();
   const hasElementsInAttachmentArea =
@@ -195,10 +203,16 @@ function LinkPanel({ selectedElements, pushUpdateForObject }) {
       name="link"
       title={__('Link', 'web-stories')}
       css={highlight?.showEffect && styles.FLASH}
+      onAnimationEnd={() => resetHighlight()}
       isPersistable={!highlight}
     >
       <LinkInput
-        ref={linkRef}
+        ref={(node) => {
+          if (node && highlight?.focus && highlight?.showEffect) {
+            node.addEventListener('keydown', cancelHighlight, { once: true });
+            node.focus();
+          }
+        }}
         onChange={(value) =>
           !displayLinkGuidelines &&
           handleChange({ url: value }, !value /* submit */)

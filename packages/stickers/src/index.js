@@ -57,15 +57,15 @@ import * as fashionInspirationStickers from './fashion-inspiration';
 import * as skinCareAtHomeStickers from './skin-care-at-home';
 import * as artBooksGiftGuideStickers from './art-books-gift-guide';
 import * as vintageChairsWhatToLookForStickers from './vintage-chairs-what-to-look-for';
-import * as meetJanePopularStickers from './meet-jane-popular';
-import * as rvSummerAdventureStickers from './rv-summer-adventure';
-import * as soloSundayInYourCityStickers from './solo-sunday-in-your-city';
+import * as celebrityLifeStoryStickers from './celebrity-life-story';
+import * as summerAdventureGuideStickers from './summer-adventure-guide';
+import * as oneDayCityItineraryStickers from './one-day-city-itinerary';
 import * as technologyAdviceStickers from './technology-advice';
 import * as allAboutCarsStickers from './all-about-cars';
 import * as theBoolsQuizStickers from './the-bools-quiz';
 import * as sustainabilityTipsStickers from './sustainability-tips';
 import * as anArtistsLegacyStickers from './an-artists-legacy';
-import * as hawaiiInYourBackyardLuauStickers from './hawaii-in-your-backyard';
+import * as tipsForThrowingAnOutdoorLuauStickers from './tips-for-throwing-an-outdoor-luau';
 
 export default {
   ...beautyStickers,
@@ -109,13 +109,13 @@ export default {
   ...skinCareAtHomeStickers,
   ...artBooksGiftGuideStickers,
   ...vintageChairsWhatToLookForStickers,
-  ...meetJanePopularStickers,
-  ...rvSummerAdventureStickers,
-  ...soloSundayInYourCityStickers,
+  ...celebrityLifeStoryStickers,
+  ...summerAdventureGuideStickers,
+  ...oneDayCityItineraryStickers,
   ...technologyAdviceStickers,
   ...allAboutCarsStickers,
   ...theBoolsQuizStickers,
   ...sustainabilityTipsStickers,
   ...anArtistsLegacyStickers,
-  ...hawaiiInYourBackyardLuauStickers,
+  ...tipsForThrowingAnOutdoorLuauStickers,
 };

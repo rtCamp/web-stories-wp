@@ -18,11 +18,16 @@
  * External dependencies
  */
 import styled from 'styled-components';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  useFocusOut,
+} from '@web-stories-wp/react';
 import { __, sprintf } from '@web-stories-wp/i18n';
 import { trackEvent } from '@web-stories-wp/tracking';
 import { useGridViewKeys } from '@web-stories-wp/design-system';
-import { useFocusOut } from '@web-stories-wp/react';
 
 /**
  * Internal dependencies
@@ -102,6 +107,8 @@ function TemplateGridView({ pageSize, templates, templateActions }) {
             <CardGridItem
               key={template.id}
               role="listitem"
+              id={`template-grid-item-${template.id}`}
+              className="templateGridItem"
               data-testid={`template-grid-item-${template.id}`}
               ref={(el) => {
                 itemRefs.current[template.id] = el;
@@ -128,6 +135,7 @@ function TemplateGridView({ pageSize, templates, templateActions }) {
                 tabIndex={tabIndex}
                 pageSize={pageSize}
                 story={template}
+                slug={template.slug}
                 centerAction={{
                   targetAction: template.centerTargetAction,
                   label:
