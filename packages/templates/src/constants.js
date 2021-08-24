@@ -70,4 +70,5 @@ export const TEMPLATE_NAMES = [
   'summer-adventure-guide',
   'one-day-city-itinerary',
   'technology-advice',
+  'sports-quiz',
 ];
