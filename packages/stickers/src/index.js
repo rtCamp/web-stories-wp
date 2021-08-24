@@ -65,7 +65,7 @@ import * as allAboutCarsStickers from './all-about-cars';
 import * as theBoolsQuizStickers from './the-bools-quiz';
 import * as sustainabilityTipsStickers from './sustainability-tips';
 import * as anArtistsLegacyStickers from './an-artists-legacy';
-import * as hawaiiInYourBackyardLuauStickers from './hawaii-in-your-backyard';
+import * as tipsForThrowingAnOutdoorLuauStickers from './tips-for-throwing-an-outdoor-luau';
 
 export default {
   ...beautyStickers,
@@ -117,5 +117,5 @@ export default {
   ...theBoolsQuizStickers,
   ...sustainabilityTipsStickers,
   ...anArtistsLegacyStickers,
-  ...hawaiiInYourBackyardLuauStickers,
+  ...tipsForThrowingAnOutdoorLuauStickers,
 };
