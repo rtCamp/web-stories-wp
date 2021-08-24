@@ -71,4 +71,5 @@ export const TEMPLATE_NAMES = [
   'one-day-city-itinerary',
   'technology-advice',
   'sports-quiz',
+  'sustainability-tips',
 ];
