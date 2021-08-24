@@ -68,4 +68,5 @@ export const TEMPLATE_NAMES = [
   'celebrity-life-story',
   'series-best-of',
   'summer-adventure-guide',
+  'one-day-city-itinerary',
 ];
