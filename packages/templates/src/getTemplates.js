@@ -116,6 +116,7 @@ async function getTemplates(imageBaseUrl) {
     'art-books-gift-guide',
     'vintage-chairs-buying-guide',
     'celebrity-life-story',
+    'series-best-of',
   ];
 
   const trackTiming = getTimeTracker('load_templates');
