@@ -121,6 +121,7 @@ async function getTemplates(imageBaseUrl) {
     'one-day-city-itinerary',
     'technology-advice',
     'sports-quiz',
+    'sustainability-tips',
   ];
 
   const trackTiming = getTimeTracker('load_templates');
