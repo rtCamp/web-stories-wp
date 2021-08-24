@@ -120,6 +120,7 @@ async function getTemplates(imageBaseUrl) {
     'summer-adventure-guide',
     'one-day-city-itinerary',
     'technology-advice',
+    'sports-quiz',
   ];
 
   const trackTiming = getTimeTracker('load_templates');
