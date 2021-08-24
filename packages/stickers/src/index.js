@@ -57,7 +57,7 @@ import * as fashionInspirationStickers from './fashion-inspiration';
 import * as skinCareAtHomeStickers from './skin-care-at-home';
 import * as artBooksGiftGuideStickers from './art-books-gift-guide';
 import * as vintageChairsWhatToLookForStickers from './vintage-chairs-what-to-look-for';
-import * as meetJanePopularStickers from './meet-jane-popular';
+import * as celebrityLifeStoryStickers from './celebrity-life-story';
 import * as rvSummerAdventureStickers from './rv-summer-adventure';
 import * as soloSundayInYourCityStickers from './solo-sunday-in-your-city';
 import * as technologyAdviceStickers from './technology-advice';
@@ -109,7 +109,7 @@ export default {
   ...skinCareAtHomeStickers,
   ...artBooksGiftGuideStickers,
   ...vintageChairsWhatToLookForStickers,
-  ...meetJanePopularStickers,
+  ...celebrityLifeStoryStickers,
   ...rvSummerAdventureStickers,
   ...soloSundayInYourCityStickers,
   ...technologyAdviceStickers,
