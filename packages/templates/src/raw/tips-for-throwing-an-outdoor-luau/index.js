@@ -15,38 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'tips-for-throwing-an-outdoor-luau',
-  title: _x(
-    'Tips for Throwing an Outdoor Luau',
-    'template name',
-    'web-stories'
-  ),
-  tags: [
-    _x('Home & Garden', 'template keyword', 'web-stories'),
-    _x('Tips', 'template keyword', 'web-stories'),
-    _x('Party', 'template keyword', 'web-stories'),
-    _x('Planning', 'template keyword', 'web-stories'),
-    _x('Yellow', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Dry Yellow', 'color', 'web-stories'), color: '#ece7bd' },
-    { label: _x('White', 'color', 'web-stories'), color: '#fff' },
-    { label: _x('Banff Green', 'color', 'web-stories'), color: '#3f4f3e' },
-  ],
-  description: __(
-    'With its nature-inspired banners and stickers, this template will let you create lively and playful stories for topics involving nature. Announce events and retreats, give out travel tips and recommendations, share recipes and so much more.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Home & Garden', 'template vertical', 'web-stories'),
 };

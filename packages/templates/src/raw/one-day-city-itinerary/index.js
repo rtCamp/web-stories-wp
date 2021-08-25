@@ -15,34 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'one-day-city-itinerary',
-  title: _x('One Day City Itinerary', 'template name', 'web-stories'),
-  tags: [
-    _x('Travel', 'template keyword', 'web-stories'),
-    _x('Brochure', 'template keyword', 'web-stories'),
-    _x('Guide', 'template keyword', 'web-stories'),
-    _x('Aesthetic', 'template keyword', 'web-stories'),
-    _x('White', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Berry Red', 'color', 'web-stories'), color: '#e0193e' },
-    { label: _x('Havana White', 'color', 'web-stories'), color: '#f7ece3' },
-    { label: _x('White', 'color', 'web-stories'), color: '#fff' },
-  ],
-  description: __(
-    'With its combination of 3 beautiful fonts, curved sections and bright colors, this template is equipped with the liveliness of an elegant travel magazine. Create one-day itineraries, sight-seeing guides and other stories for urban travel. Change the colors to suit your style.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Travel', 'template vertical', 'web-stories'),
 };
