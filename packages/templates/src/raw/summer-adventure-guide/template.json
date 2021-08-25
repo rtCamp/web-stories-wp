@@ -1684,8 +1684,8 @@
             "bottomRight": 2,
             "bottomLeft": 2
           },
-          "width": 304,
-          "height": 63,
+          "width": 274,
+          "height": 65,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -3974,7 +3974,7 @@
             "hasHiddenPadding": false
           },
           "x": 183,
-          "y": 161,
+          "y": 174,
           "id": "4499c215-0509-4c8a-ab95-9ac7bf00f010",
           "basedOn": "75b36af4-815e-41f2-b339-43e2fc8eb6c7",
           "content": "<span style=\"font-weight: 700; color: #fec85a\">1.</span>",
@@ -4049,7 +4049,7 @@
             "hasHiddenPadding": false
           },
           "x": 117,
-          "y": 322,
+          "y": 330,
           "id": "183d771f-bcc7-4918-af1a-b4e7083124f6",
           "basedOn": "75b36af4-815e-41f2-b339-43e2fc8eb6c7",
           "content": "<span style=\"font-weight: 700; color: #fec85a\">2.</span>",
@@ -4124,7 +4124,7 @@
             "hasHiddenPadding": false
           },
           "x": 188,
-          "y": 480,
+          "y": 486,
           "id": "94326373-cbf7-42c1-9a63-f595d056a3ef",
           "basedOn": "75b36af4-815e-41f2-b339-43e2fc8eb6c7",
           "content": "<span style=\"font-weight: 700; color: #fec85a\">3.</span>",
@@ -4203,10 +4203,10 @@
             "hasHiddenPadding": false
           },
           "x": 183,
-          "y": 218,
+          "y": 231,
           "id": "1180a7f4-c339-44e9-941a-6aea7d4da000",
           "basedOn": "75b36af4-815e-41f2-b339-43e2fc8eb6c7",
-          "content": "<span style=\"color: #fec85a\">Choose the camper</span>",
+          "content": "<span style=\"color: #fec85a\">Choose the right camper</span>",
           "fontWeight": 700,
           "borderRadius": {
             "locked": true,
@@ -4216,7 +4216,7 @@
             "bottomLeft": 2
           },
           "width": 130,
-          "height": 43,
+          "height": 41,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
@@ -4282,7 +4282,7 @@
             "hasHiddenPadding": false
           },
           "x": 117,
-          "y": 379,
+          "y": 387,
           "id": "ee28c61e-d0c9-4ce2-ae23-e287c251412c",
           "basedOn": "75b36af4-815e-41f2-b339-43e2fc8eb6c7",
           "content": "<span style=\"color: #fec85a\">Plan your budget</span>",
@@ -4361,7 +4361,7 @@
             "hasHiddenPadding": false
           },
           "x": 188,
-          "y": 535,
+          "y": 541,
           "id": "6593319f-6e62-4587-b39f-c7a041b0b4b8",
           "basedOn": "75b36af4-815e-41f2-b339-43e2fc8eb6c7",
           "content": "<span style=\"color: #fec85a\">Map the&nbsp;</span>\n<span style=\"color: #fec85a\">route</span>",

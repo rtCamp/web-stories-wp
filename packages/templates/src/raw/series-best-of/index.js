@@ -15,34 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'series-best-of',
-  title: _x('Series - Best Of', 'template name', 'web-stories'),
-  tags: [
-    _x('Entertainment', 'template keyword', 'web-stories'),
-    _x('Roundup', 'template keyword', 'web-stories'),
-    _x('Banners', 'template keyword', 'web-stories'),
-    _x('Classic', 'template keyword', 'web-stories'),
-    _x('Yellow', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Zinc Yellow', 'color', 'web-stories'), color: '#ffe145' },
-    { label: _x('Black', 'color', 'web-stories'), color: '#000' },
-    { label: _x('Mercury Gray', 'color', 'web-stories'), color: '#e3e3e3' },
-  ],
-  description: __(
-    'This template’s simple banners and classic font make it great for creating bite-sized informational stories. Easily change the colors and use it to create stories for a variety of different topics like technology, entertainment, arts and crafts and more.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Entertainment', 'template vertical', 'web-stories'),
 };

@@ -15,34 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'sports-quiz',
-  title: _x('Sports Quiz', 'template name', 'web-stories'),
-  tags: [
-    _x('Health & Wellness', 'template keyword', 'web-stories'),
-    _x('Quiz', 'template keyword', 'web-stories'),
-    _x('Sports', 'template keyword', 'web-stories'),
-    _x('Bold', 'template keyword', 'web-stories'),
-    _x('Violet', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Amethyst Violet', 'color', 'web-stories'), color: '#442383' },
-    { label: _x('White', 'color', 'web-stories'), color: '#fff' },
-    { label: _x('Mango', 'color', 'web-stories'), color: '#ffcd48' },
-  ],
-  description: __(
-    'Create interactive quizzes for sports and a variety of other topics with this bold and energetic template. Just change the photos and colors to suit your style.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Health & Wellness', 'template vertical', 'web-stories'),
 };
