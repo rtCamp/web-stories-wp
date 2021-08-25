@@ -15,34 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'summer-adventure-guide',
-  title: _x('Summer Adventure Guide', 'template name', 'web-stories'),
-  tags: [
-    _x('Travel', 'template keyword', 'web-stories'),
-    _x('Adventure', 'template keyword', 'web-stories'),
-    _x('Trip', 'template keyword', 'web-stories'),
-    _x('Tips', 'template keyword', 'web-stories'),
-    _x('Green', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Golden Yellow', 'color', 'web-stories'), color: '#fec85a' },
-    { label: _x('Dark Olive Green', 'color', 'web-stories'), color: '#556C28' },
-    { label: _x('White', 'color', 'web-stories'), color: '#fff' },
-  ],
-  description: __(
-    'This template’s green-yellow color palette and map-like stickers will let you create fun and exciting stories for adventure travel, ecotourism, hiking, camping, wildlife and more.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Travel', 'template vertical', 'web-stories'),
 };

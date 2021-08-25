@@ -15,35 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'an-artists-legacy',
-  title: _x('An Artist’s Legacy', 'template name', 'web-stories'),
-  tags: [
-    _x('Arts & Crafts', 'template keyword', 'web-stories'),
-    _x('Paint', 'template keyword', 'web-stories'),
-    _x('Artist', 'template keyword', 'web-stories'),
-    _x('Story', 'template keyword', 'web-stories'),
-    _x('Grey', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Lavender Gray', 'color', 'web-stories'), color: '#eaeef4' },
-    { label: _x('Baby Beluga Gray', 'color', 'web-stories'), color: '#4d4c48' },
-    { label: _x('Pale Orange', 'color', 'web-stories'), color: '#ffdcc0' },
-    { label: _x('Meringue White', 'color', 'web-stories'), color: '#fbf5f1' },
-  ],
-  description: __(
-    'With its artistic brush strokes, white background, and art gallery-like arrangement of photos, this template will let you create beautiful stories around painting, sculpting and other arts and crafts.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Arts & Crafts', 'template vertical', 'web-stories'),
 };

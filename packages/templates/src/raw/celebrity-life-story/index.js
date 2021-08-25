@@ -15,33 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'celebrity-life-story',
-  title: _x('Celebrity Life Story', 'template name', 'web-stories'),
-  tags: [
-    _x('Entertainment', 'template keyword', 'web-stories'),
-    _x('Celebrity', 'template keyword', 'web-stories'),
-    _x('Pop', 'template keyword', 'web-stories'),
-    _x('Bright', 'template keyword', 'web-stories'),
-    _x('Black', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Phantom Black', 'color', 'web-stories'), color: '#020202' },
-    { label: _x('Gecko Green', 'color', 'web-stories'), color: '#80FF44' },
-  ],
-  description: __(
-    'With an upbeat neon green color and a powerful headings font, this template is great for creating stories around pop culture, music and the show business.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Entertainment', 'template vertical', 'web-stories'),
 };

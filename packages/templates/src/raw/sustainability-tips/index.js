@@ -15,37 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'sustainability-tips',
-  title: _x('Sustainability Tips', 'template name', 'web-stories'),
-  tags: [
-    _x('Health & Wellness', 'template keyword', 'web-stories'),
-    _x('Sustainability', 'template keyword', 'web-stories'),
-    _x('Environment', 'template keyword', 'web-stories'),
-    _x('Tips', 'template keyword', 'web-stories'),
-    _x('Green', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('Eco Green', 'color', 'web-stories'), color: '#134f3c' },
-    { label: _x('Acorn Orange', 'color', 'web-stories'), color: '#bb7c48' },
-    {
-      label: _x('Light Dutch White', 'color', 'web-stories'),
-      color: '#fdf0d6',
-    },
-  ],
-  description: __(
-    'This template’s soft earthly colors and readable font will let you create beautiful and calming stories for nature topics. Add your own illustrations and create infographics, how-to guides and more.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Health & Wellness', 'template vertical', 'web-stories'),
 };

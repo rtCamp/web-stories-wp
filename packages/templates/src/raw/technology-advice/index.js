@@ -15,34 +15,12 @@
  */
 
 /**
- * External dependencies
- */
-import { __, _x } from '@web-stories-wp/i18n';
-
-/**
  * Internal dependencies
  */
 import { default as template } from './template';
+import { default as metaData } from './metaData';
 
 export default {
-  slug: 'technology-advice',
-  title: _x('Technology Advice', 'template name', 'web-stories'),
-  tags: [
-    _x('Technology', 'template keyword', 'web-stories'),
-    _x('Studio', 'template keyword', 'web-stories'),
-    _x('Tips', 'template keyword', 'web-stories'),
-    _x('Modern', 'template keyword', 'web-stories'),
-    _x('White', 'template keyword', 'web-stories'),
-  ],
-  colors: [
-    { label: _x('White', 'color', 'web-stories'), color: '#fff' },
-    { label: _x('Cloud Black', 'color', 'web-stories'), color: '#444849' },
-    { label: _x('Cosmonaut Gray', 'color', 'web-stories'), color: '#dedede' },
-  ],
-  description: __(
-    'With its smooth gray shades and corner frame accents, this template is like your very own professional tech review studio. Use photos and videos and create informative, sleek-looking product reviews, comparisons and buying guides for your audience.',
-    'web-stories'
-  ),
+  ...metaData,
   ...template,
-  vertical: _x('Technology', 'template vertical', 'web-stories'),
 };
