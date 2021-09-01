@@ -14,30 +14,4 @@
  * limitations under the License.
  */
 
-/**
- * External dependencies
- */
-import PropTypes from 'prop-types';
-import { useState } from '@web-stories-wp/react';
-
-/**
- * Internal dependencies
- */
-import HeaderContext from './context';
-
-function HeaderProvider({ children }) {
-  const [titleInput, setTitleInput] = useState();
-  const value = {
-    titleInput,
-    setTitleInput,
-  };
-  return (
-    <HeaderContext.Provider value={value}>{children}</HeaderContext.Provider>
-  );
-}
-
-HeaderProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default HeaderProvider;
+export { default } from './backgroundAudio';

@@ -14,19 +14,4 @@
  * limitations under the License.
  */
 
-/**
- * External dependencies
- */
-import { useContext } from '@web-stories-wp/react';
-
-/**
- * Internal dependencies
- */
-import HeaderContext from './context';
-
-function useHeader() {
-  return useContext(HeaderContext);
-}
-
-// TODO: No remaining callers; remove.
-export default useHeader;
+export { default } from './backgroundAudio';

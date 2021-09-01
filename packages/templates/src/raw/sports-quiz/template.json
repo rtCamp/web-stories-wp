@@ -1,34 +1,19 @@
 {
-  "current": null,
-  "selection": [],
-  "story": {},
-  "version": 32,
+  "version": 33,
   "pages": [
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "bd26e9cb-d85b-4d02-867b-8eecd9b2f145",
@@ -43,7 +28,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Two Men Playing Basketball",
             "alt": "Two Men Playing Basketball",
             "sizes": [],
             "local": false,
@@ -52,21 +36,11 @@
             "isMuted": false,
             "baseColor": [42, 42, 42]
           },
-          "overlay": {
-            "color": {
-              "r": 68,
-              "g": 35,
-              "b": 131,
-              "a": 0.7
-            }
-          }
+          "overlay": { "color": { "r": 68, "g": 35, "b": 131, "a": 0.7 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -103,19 +77,10 @@
             }
           },
           "fontSize": 110,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 0.9,
           "textAlign": "initial",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">The</span>\n<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">Bools</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -137,10 +102,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -177,19 +139,10 @@
             }
           },
           "fontSize": 110,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 0.9,
           "textAlign": "initial",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: rgba(255,205,72,0.5); text-transform: uppercase\">Quiz</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -214,31 +167,16 @@
             "top": 0,
             "bottom": 0,
             "lockedWidth": true,
-            "color": {
-              "color": {
-                "r": 0,
-                "g": 0,
-                "b": 0
-              }
-            }
+            "color": { "color": { "r": 0, "g": 0, "b": 0 } }
           },
           "type": "text"
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 0,
           "y": 520,
           "width": 291,
@@ -246,18 +184,13 @@
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "id": "9e6c1333-5fe1-4561-b08f-550f3fa74593",
           "type": "shape"
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -300,19 +233,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "initial",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; color: #462486; text-transform: uppercase\">How much do you know about the BOOLS</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -333,6 +257,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "d737e6c0-c774-4fcc-90c0-8a8f7ec0c9c9",
@@ -367,37 +292,20 @@
           "delay": 300
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 68,
-          "g": 35,
-          "b": 131
-        }
-      },
+      "backgroundColor": { "color": { "r": 68, "g": 35, "b": 131 } },
       "type": "page",
       "id": "d16d2719-b94a-46d4-94c1-f3f863bc5b3d",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -406,30 +314,18 @@
       "pageTemplateType": "Cover"
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 338,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "7e5cdd4e-0828-4a56-a7a3-abf351443044",
@@ -444,7 +340,6 @@
             "width": 1080,
             "height": 1106,
             "id": 0,
-            "title": "People watching live NBA game at Bankers life Fieldhouse",
             "alt": "People watching live NBA game at Bankers life Fieldhouse",
             "sizes": [],
             "local": false,
@@ -453,21 +348,11 @@
             "isMuted": false,
             "baseColor": [32, 30, 29]
           },
-          "overlay": {
-            "color": {
-              "r": 0,
-              "g": 0,
-              "b": 0,
-              "a": 0.4
-            }
-          }
+          "overlay": { "color": { "r": 0, "g": 0, "b": 0, "a": 0.4 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -504,19 +389,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "center",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">The Bools</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -539,10 +415,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -585,19 +458,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "center",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"color: #ffcd48\">One of the all time famous teams in the NBA.</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -620,10 +484,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -660,19 +521,10 @@
             }
           },
           "fontSize": 204,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 0.9,
           "textAlign": "initial",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: rgba(255,205,72,0.5); text-transform: uppercase\">Bools</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -693,13 +545,7 @@
             "top": 0,
             "bottom": 0,
             "lockedWidth": true,
-            "color": {
-              "color": {
-                "r": 0,
-                "g": 0,
-                "b": 0
-              }
-            }
+            "color": { "color": { "r": 0, "g": 0, "b": 0 } }
           },
           "basedOn": "e0581001-bbc5-482d-a1da-b5305377e9be",
           "id": "7f053a03-f901-48ea-92f4-27cb907b929c",
@@ -708,6 +554,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "f2cd944f-9dc0-4576-b2c7-4d2c359ee41d",
@@ -718,37 +565,20 @@
           "delay": 0
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "6da0c375-68dd-455b-8872-871cf1e912e5",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -757,30 +587,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "a4941a5d-f04b-4cde-9d94-78112506f8e5",
@@ -795,7 +613,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Man in Gray Sleeveless Shirt Carrying White and Brown Spalding Basketball",
             "alt": "Man in Gray Sleeveless Shirt Carrying White and Brown Spalding Basketball",
             "sizes": [],
             "local": false,
@@ -808,34 +625,15 @@
             "type": "linear",
             "rotation": 0,
             "stops": [
-              {
-                "color": {
-                  "r": 0,
-                  "g": 0,
-                  "b": 0,
-                  "a": 0
-                },
-                "position": 0
-              },
-              {
-                "color": {
-                  "r": 0,
-                  "g": 0,
-                  "b": 0,
-                  "a": 1
-                },
-                "position": 1
-              }
+              { "color": { "r": 0, "g": 0, "b": 0, "a": 0 }, "position": 0 },
+              { "color": { "r": 0, "g": 0, "b": 0, "a": 1 }, "position": 1 }
             ],
             "alpha": 0.8
           }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -872,19 +670,10 @@
             }
           },
           "fontSize": 44,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "center",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">But how well do</span>\n<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">you really know them?</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -906,38 +695,22 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "e3a4e4a0-8bd3-4acd-b9bc-5f5cf58b7a23",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -946,30 +719,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "id": "fa525350-d6df-492f-9efc-e5da843508f4",
           "type": "image",
@@ -984,7 +745,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Men's Green and White Basketball Jersey Shirt",
             "alt": "Men's Green and White Basketball Jersey Shirt",
             "sizes": [],
             "local": false,
@@ -993,21 +753,11 @@
             "isMuted": false,
             "baseColor": [195, 188, 176]
           },
-          "overlay": {
-            "color": {
-              "r": 0,
-              "g": 0,
-              "b": 0,
-              "a": 0.4
-            }
-          }
+          "overlay": { "color": { "r": 0, "g": 0, "b": 0, "a": 0.4 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -1050,19 +800,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.2,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; color: #ffcd48\">Question</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -1085,10 +826,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -1125,19 +863,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">Before they were the NBA team of LA, what city did they play for?</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -1160,10 +889,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -1200,13 +926,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -1237,10 +957,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "FILL",
@@ -1277,13 +994,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -1315,10 +1026,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "FILL",
@@ -1355,13 +1063,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -1393,10 +1095,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -1437,19 +1136,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 900; color: #fff\">1 / 6</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -1471,6 +1161,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "104a548b-4b45-434a-ab40-b93b39ed6f9f",
@@ -1497,37 +1188,20 @@
           "delay": 200
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "89a6b466-6f0c-4d6c-8501-83759407d809",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "id": "94e49dc9-9c6c-45b1-8484-e5132c904931",
@@ -1536,30 +1210,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 265,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "e1205308-24a2-4406-9875-b80ef08d4261",
@@ -1574,7 +1236,6 @@
             "width": 1080,
             "height": 869,
             "id": 0,
-            "title": "North Texas Agricultural College basketball team;",
             "alt": "North Texas Agricultural College basketball team;",
             "sizes": [],
             "local": false,
@@ -1583,21 +1244,11 @@
             "isMuted": false,
             "baseColor": [56, 56, 56]
           },
-          "overlay": {
-            "color": {
-              "r": 68,
-              "g": 35,
-              "b": 131,
-              "a": 0.6
-            }
-          }
+          "overlay": { "color": { "r": 68, "g": 35, "b": 131, "a": 0.6 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -1634,19 +1285,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">Minneapolis. Where the legend was born.</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -1669,10 +1311,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -1715,19 +1354,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"color: #ffcd48\">The Bools got their name from the Great Bools after their move to Minnesota. It was the making of legends and legacies from then on.</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -1750,10 +1380,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 115,
@@ -1767,7 +1394,6 @@
             "width": 1080,
             "height": 869,
             "id": 0,
-            "title": "North Texas Agricultural College basketball team;",
             "alt": "North Texas Agricultural College basketball team;",
             "sizes": [],
             "local": false,
@@ -1777,24 +1403,17 @@
             "provider": "local",
             "baseColor": [204, 209, 207]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "x": 87,
           "y": 176,
           "width": 325,
           "height": 265,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "id": "59708f0e-975f-4942-91f5-9af42c159ee0",
           "type": "image"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "81380f20-5ab9-4fa6-9c00-dea13762f561",
@@ -1804,37 +1423,20 @@
           "delay": 0
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "8786f381-6a72-4bae-b368-0e283b27eb9e",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -1843,30 +1445,18 @@
       "pageTemplateType": "editorial"
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "1d38d16c-dc8d-46ee-89ce-4a86c7bb5cba",
@@ -1881,7 +1471,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Basketball court arena photo",
             "alt": "Basketball court arena photo",
             "sizes": [],
             "local": false,
@@ -1890,21 +1479,11 @@
             "isMuted": false,
             "baseColor": [35, 28, 31]
           },
-          "overlay": {
-            "color": {
-              "r": 0,
-              "g": 0,
-              "b": 0,
-              "a": 0.4
-            }
-          }
+          "overlay": { "color": { "r": 0, "g": 0, "b": 0, "a": 0.4 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -1947,19 +1526,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.2,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; color: #ffcd48\">Question</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -1982,10 +1552,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -2022,19 +1589,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">How many NBA championships have the BOOLS won?</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -2057,10 +1615,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -2097,13 +1652,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -2135,10 +1684,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -2175,13 +1721,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -2213,10 +1753,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -2253,13 +1790,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -2291,10 +1822,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -2335,19 +1863,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 900; color: #fff\">2 / 6</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -2369,6 +1888,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "6265ccfc-37a4-4b53-9d61-580a15833cef",
@@ -2395,37 +1915,20 @@
           "delay": 200
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "50d4d7e5-ac2c-46a6-9696-c5b051c10074",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -2434,14 +1937,10 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "scale": 208,
@@ -2455,7 +1954,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Basketball court arena photo",
             "alt": "Basketball court arena photo",
             "sizes": [],
             "local": false,
@@ -2464,38 +1962,20 @@
             "isMuted": false,
             "baseColor": [35, 28, 31]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "id": "a29c3576-6207-42c2-ab34-7176210e244a",
-          "overlay": {
-            "color": {
-              "r": 0,
-              "g": 0,
-              "b": 0,
-              "a": 0.4
-            }
-          },
+          "overlay": { "color": { "r": 0, "g": 0, "b": 0, "a": 0.4 } },
           "type": "image"
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -2538,19 +2018,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.2,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; color: #ffcd48\">Question</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -2573,10 +2044,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -2617,19 +2085,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 900; color: #fff\">2 / 6</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -2652,10 +2111,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -2692,19 +2148,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">How many NBA championships have the BOOLS won?</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -2727,10 +2174,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "FILL",
@@ -2767,13 +2211,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -2805,28 +2243,17 @@
         },
         {
           "opacity": 50,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 205,
-              "b": 72
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
           "type": "shape",
           "width": 252,
           "height": 51,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "9906c752-a920-4672-8356-e9aca0e1a89f",
           "id": "74342ad2-806c-491b-91a5-49e8f2cb0a51",
           "x": 114,
@@ -2834,28 +2261,17 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 205,
-              "b": 72
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
           "type": "shape",
           "width": 96,
           "height": 51,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "1f979da5-e494-4afb-923a-319385f88f50",
           "id": "3d471bdf-3e7d-4c31-a6db-e6511563c516",
           "x": 113,
@@ -2863,10 +2279,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -2903,19 +2316,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "right",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #fff; text-transform: uppercase\">32%</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -2938,10 +2342,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "FILL",
@@ -2978,13 +2379,7 @@
             }
           },
           "fontSize": 18,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -3016,28 +2411,17 @@
         },
         {
           "opacity": 50,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 205,
-              "b": 72
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
           "type": "shape",
           "width": 252,
           "height": 51,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "2b4e28d4-4ca7-435a-b84e-64f7b52808fe",
           "id": "4c15e90d-747e-4e2f-b953-089150551535",
           "x": 114,
@@ -3045,28 +2429,17 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 205,
-              "b": 72
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
           "type": "shape",
           "width": 173,
           "height": 51,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "033c395e-e7ff-4c3c-ac69-c10ffe068992",
           "id": "8ae179f6-dae3-4c7a-be93-5a1ea8b257b2",
           "x": 114,
@@ -3074,10 +2447,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -3114,19 +2484,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "right",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #fff; text-transform: uppercase\">46%</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -3149,10 +2510,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -3189,13 +2547,7 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -3227,28 +2579,17 @@
         },
         {
           "opacity": 50,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 205,
-              "b": 72
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
           "type": "shape",
           "width": 239,
           "height": 51,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "b938932a-8aa5-4273-a7a7-f51e9369d674",
           "id": "e4b588b6-993d-4143-acd9-88dd9e965580",
           "x": 127,
@@ -3256,28 +2597,17 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 205,
-              "b": 72
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
           "type": "shape",
           "width": 98,
           "height": 51,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "0cecb15b-8bff-4988-baf4-5bf71d86ad42",
           "id": "80b3f743-fc21-41ae-870b-944f6a546a8e",
           "x": 126,
@@ -3285,10 +2615,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -3325,19 +2652,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "right",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #fff; text-transform: uppercase\">12%</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -3359,6 +2677,7 @@
           "y": 542
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "a2a5bc9f-ae08-4064-ac41-805d001541f9",
@@ -3424,37 +2743,20 @@
           "delay": 600
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "654e580d-3d40-485f-b73c-12cf2206aad1",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -3463,30 +2765,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "3a2f873f-6b7b-4f62-995c-42f5d1e36789",
@@ -3501,7 +2791,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Man Playing Basketball",
             "alt": "Man Playing Basketball",
             "sizes": [],
             "local": false,
@@ -3509,21 +2798,11 @@
             "isOptimized": false,
             "isMuted": false
           },
-          "overlay": {
-            "color": {
-              "r": 68,
-              "g": 35,
-              "b": 131,
-              "a": 0.6
-            }
-          }
+          "overlay": { "color": { "r": 68, "g": 35, "b": 131, "a": 0.6 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -3560,19 +2839,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">The Bools</span>\n<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">have won</span>\n<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">16 rINGS</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -3595,10 +2865,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -3641,19 +2908,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"color: #ffcd48\">In their 52 seasons of championships in the making, they have won 16 rings in total.</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -3676,10 +2934,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 100,
@@ -3693,7 +2948,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Man Playing Basketball",
             "alt": "Man Playing Basketball",
             "sizes": [],
             "local": false,
@@ -3703,24 +2957,17 @@
             "provider": "local",
             "baseColor": [204, 209, 207]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "x": 0,
           "y": 44,
           "width": 324,
           "height": 265,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "id": "b46d87ce-78a5-433e-a386-91c133344ec0",
           "type": "image"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "7fc3b17c-b342-4fcc-9b16-0aa25d4b6066",
@@ -3730,37 +2977,20 @@
           "delay": 0
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "e79744a3-d351-480a-befe-63092e9913e0",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -3769,30 +2999,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "id": "d0d7d39a-5c8d-47ba-b3f1-fe8ac2241a64",
           "type": "image",
@@ -3807,7 +3025,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Photo Of Man Doing A Dunk",
             "alt": "Photo Of Man Doing A Dunk",
             "sizes": [],
             "local": false,
@@ -3816,21 +3033,11 @@
             "isMuted": false,
             "baseColor": [220, 218, 205]
           },
-          "overlay": {
-            "color": {
-              "r": 0,
-              "g": 0,
-              "b": 0,
-              "a": 0.4
-            }
-          }
+          "overlay": { "color": { "r": 0, "g": 0, "b": 0, "a": 0.4 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -3873,19 +3080,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.2,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; color: #ffcd48\">Question</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -3908,10 +3106,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -3948,19 +3143,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">Can you name the all-time leading BOOLS scorer in NBA history?</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -3983,10 +3169,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -4023,13 +3206,7 @@
             }
           },
           "fontSize": 19,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -4061,10 +3238,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -4101,13 +3275,7 @@
             }
           },
           "fontSize": 19,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -4139,10 +3307,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "backgroundTextMode": "FILL",
@@ -4179,13 +3344,7 @@
             }
           },
           "fontSize": 19,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "lineHeight": 1,
           "textAlign": "center",
           "padding": {
@@ -4217,10 +3376,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -4261,19 +3417,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 900; color: #fff\">3 / 6</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -4295,6 +3442,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "568e08b0-0e16-4cac-bb87-e9d81dc6eb40",
@@ -4321,37 +3469,20 @@
           "delay": 200
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "c3cc330c-61a7-48ad-b606-fb32237e4e9c",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "id": "76b087bc-fefd-4fd2-b80a-acb6bb496174",
@@ -4360,30 +3491,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 48,
           "y": 0,
           "width": 330,
           "height": 494,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "type": "image",
           "id": "5322f68c-f626-456a-8de1-e6089bb96476",
@@ -4398,7 +3517,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Photo Of Man Doing Dunk",
             "alt": "Photo Of Man Doing Dunk",
             "sizes": [],
             "local": false,
@@ -4407,21 +3525,11 @@
             "isMuted": false,
             "baseColor": [159, 172, 160]
           },
-          "overlay": {
-            "color": {
-              "r": 68,
-              "g": 35,
-              "b": 131,
-              "a": 0.7
-            }
-          }
+          "overlay": { "color": { "r": 68, "g": 35, "b": 131, "a": 0.7 } }
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -4458,19 +3566,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">Kareem</span>\n<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">Japaar</span>\n<span style=\"font-weight: 700; font-style: italic; color: #ffcd48; text-transform: uppercase\">38,387 points</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -4493,10 +3592,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -4539,19 +3635,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"color: #ffcd48\">The highest scoring player of all time is Kareem Japaar with over 38,000 points from 1982 to 2012.</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -4574,10 +3661,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 100,
@@ -4591,7 +3675,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Photo Of Man Doing Dunk",
             "alt": "Photo Of Man Doing Dunk",
             "sizes": [],
             "local": false,
@@ -4601,24 +3684,17 @@
             "provider": "local",
             "baseColor": [204, 209, 207]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "x": 50,
           "y": 368,
           "width": 312,
           "height": 307,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "id": "4d57a573-0d19-4eb7-acc3-29b6efcba562",
           "type": "image"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "112b6147-a6f1-430a-bbd0-e190d53a5f14",
@@ -4628,37 +3704,20 @@
           "delay": 0
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 255,
-          "b": 255
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
       "type": "page",
       "id": "e7476046-ab18-4107-8f80-67923c69dc26",
       "defaultBackgroundElement": {
         "opacity": 100,
-        "flip": {
-          "vertical": false,
-          "horizontal": false
-        },
+        "flip": { "vertical": false, "horizontal": false },
         "rotationAngle": 0,
         "lockAspectRatio": true,
-        "backgroundColor": {
-          "color": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          }
-        },
+        "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
         "x": 1,
         "y": 1,
         "width": 1,
         "height": 1,
-        "mask": {
-          "type": "rectangle"
-        },
+        "mask": { "type": "rectangle" },
         "isBackground": true,
         "isDefaultBackground": true,
         "type": "shape",
@@ -4667,30 +3726,18 @@
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 1,
           "y": 1,
           "width": 1,
           "height": 1,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "isDefaultBackground": true,
           "id": "8e7e411d-0ab9-4705-beed-056f0bab2f6f",
@@ -4698,10 +3745,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 100,
@@ -4715,7 +3759,6 @@
             "width": 480,
             "height": 320,
             "id": 0,
-            "title": "Black Haired Man Wearing Black Sleeveless Shirt and Black Shorts",
             "alt": "Black Haired Man Wearing Black Sleeveless Shirt and Black Shorts",
             "sizes": [],
             "local": false,
@@ -4724,29 +3767,18 @@
             "isMuted": false,
             "baseColor": [51, 50, 33]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "x": 237,
           "y": -57,
           "width": 104,
           "height": 103,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "id": "2878f4c9-2655-46a7-a0fb-53c60ce38e73",
           "type": "image"
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 100,
@@ -4760,7 +3792,6 @@
             "width": 480,
             "height": 320,
             "id": 0,
-            "title": "Basketball court photo",
             "alt": "Basketball court photo",
             "sizes": [],
             "local": false,
@@ -4769,18 +3800,10 @@
             "isMuted": false,
             "baseColor": [44, 54, 61]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "width": 97,
           "height": 98,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "4f5ec1db-66b9-466e-a536-2c049218a231",
           "id": "ef11fa81-271a-4da8-adce-e81a0be7cd73",
           "x": 0,
@@ -4789,10 +3812,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 115,
@@ -4806,7 +3826,6 @@
             "width": 1080,
             "height": 1620,
             "id": 0,
-            "title": "Man in Gray Sleeveless Shirt Carrying White and Brown Spalding Basketball",
             "alt": "Man in Gray Sleeveless Shirt Carrying White and Brown Spalding Basketball",
             "sizes": [],
             "local": false,
@@ -4816,18 +3835,10 @@
             "provider": "local",
             "baseColor": [61, 61, 59]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "width": 98,
           "height": 199,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "0b4674d1-d819-45c6-990d-cc4ff3d5dcc9",
           "id": "e8379b0f-a9a3-4b19-ac3e-c669ac869eb5",
           "x": 314,
@@ -4836,10 +3847,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -4882,19 +3890,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.2,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; color: #ffcd48\">Correct</span>\n<span style=\"font-weight: 700; color: #ffcd48\">Answers</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -4917,10 +3916,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -4961,19 +3957,10 @@
             }
           },
           "fontSize": 16,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 900; color: #fff\">5 / 6</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -4996,10 +3983,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -5036,19 +4020,10 @@
             }
           },
           "fontSize": 300,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "center",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #ffcd48\">5</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -5071,10 +4046,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -5111,19 +4083,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; color: #fff; text-transform: uppercase\">Someone knows their team. Congratulations!</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -5146,10 +4109,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -5192,19 +4152,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"color: #ffcd48\">Most Bools fans average a score of 3/5. Not you though my friend. You really know your stuff.</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -5226,6 +4177,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "fc54b07b-fa3f-4e04-abf0-e75ab6901658",
@@ -5260,42 +4212,24 @@
           "delay": 0
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 68,
-          "g": 35,
-          "b": 131
-        }
-      },
+      "backgroundColor": { "color": { "r": 68, "g": 35, "b": 131 } },
       "type": "page",
       "id": "6992edac-d28c-4193-a001-044f004dbdad",
       "pageTemplateType": ""
     },
     {
-      "overlay": "none",
       "elements": [
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "x": 1,
           "y": 1,
           "width": 1,
           "height": 1,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "isBackground": true,
           "isDefaultBackground": true,
           "id": "1a1229a3-c37d-44f3-85b1-5e6a5737d31f",
@@ -5303,10 +4237,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -5343,19 +4274,10 @@
             }
           },
           "fontSize": 38,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; text-transform: uppercase\">Enjoyed this sport quiz?</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -5378,10 +4300,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -5424,19 +4343,10 @@
             }
           },
           "fontSize": 17,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1.3,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "Test your NFL trivia knowledge at: triviaonline.com/sport",
           "fontWeight": 700,
           "borderRadius": {
@@ -5459,10 +4369,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
           "scale": 100,
@@ -5476,7 +4383,6 @@
             "width": 720,
             "height": 1080,
             "id": 0,
-            "title": "Football Player Holding Football",
             "alt": "Football Player Holding Football",
             "sizes": [],
             "local": false,
@@ -5485,46 +4391,27 @@
             "isMuted": false,
             "baseColor": [29, 43, 30]
           },
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "x": 95,
           "y": 237,
           "width": 274,
           "height": 379,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "id": "cc4675fd-c954-4669-8a03-1df7eae31acf",
           "type": "image"
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": false,
-          "backgroundColor": {
-            "color": {
-              "r": 255,
-              "g": 255,
-              "b": 255
-            }
-          },
+          "backgroundColor": { "color": { "r": 255, "g": 255, "b": 255 } },
           "width": 214,
           "height": 50,
           "scale": 100,
           "focalX": 50,
           "focalY": 50,
-          "mask": {
-            "type": "rectangle"
-          },
+          "mask": { "type": "rectangle" },
           "basedOn": "9835011c-7eb0-4ae9-9d41-b99036e5e1c3",
           "id": "b7dd7a10-7969-425e-9b31-c76ad85453f7",
           "x": 0,
@@ -5533,10 +4420,7 @@
         },
         {
           "opacity": 100,
-          "flip": {
-            "vertical": false,
-            "horizontal": false
-          },
+          "flip": { "vertical": false, "horizontal": false },
           "rotationAngle": 0,
           "lockAspectRatio": true,
           "backgroundTextMode": "NONE",
@@ -5573,19 +4457,10 @@
             }
           },
           "fontSize": 20,
-          "backgroundColor": {
-            "color": {
-              "r": 196,
-              "g": 196,
-              "b": 196
-            }
-          },
+          "backgroundColor": { "color": { "r": 196, "g": 196, "b": 196 } },
           "lineHeight": 1,
           "textAlign": "left",
-          "padding": {
-            "locked": true,
-            "hasHiddenPadding": false
-          },
+          "padding": { "locked": true, "hasHiddenPadding": false },
           "content": "<span style=\"font-weight: 700; font-style: italic; text-transform: uppercase\">Click to play</span>",
           "fontWeight": 700,
           "borderRadius": {
@@ -5607,6 +4482,7 @@
           "type": "text"
         }
       ],
+      "overlay": "none",
       "animations": [
         {
           "id": "7ed8d243-0bbd-4097-a174-357a5a54cd7f",
@@ -5632,16 +4508,13 @@
           "delay": 300
         }
       ],
-      "backgroundColor": {
-        "color": {
-          "r": 255,
-          "g": 205,
-          "b": 72
-        }
-      },
+      "backgroundColor": { "color": { "r": 255, "g": 205, "b": 72 } },
       "type": "page",
       "id": "136cca74-5131-4053-a4e2-003b582a3306",
       "pageTemplateType": ""
     }
-  ]
+  ],
+  "current": null,
+  "selection": [],
+  "story": {}
 }
