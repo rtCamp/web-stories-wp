@@ -48,7 +48,7 @@ define( 'WEBSTORIES_PLUGIN_DIR_PATH', plugin_dir_path( WEBSTORIES_PLUGIN_FILE ) 
 define( 'WEBSTORIES_PLUGIN_DIR_URL', plugin_dir_url( WEBSTORIES_PLUGIN_FILE ) );
 define( 'WEBSTORIES_MINIMUM_PHP_VERSION', '7.0' );
 define( 'WEBSTORIES_MINIMUM_WP_VERSION', '5.5' );
-define( 'WEBSTORIES_CDN_URL', 'https://wp.stories.google/static/main' );
+define( 'WEBSTORIES_CDN_URL', 'https://media.githubusercontent.com/media/google/web-stories-wp/assets/all-about-cars/public/static/main' );
 
 if ( ! defined( 'WEBSTORIES_DEV_MODE' ) ) {
 	define( 'WEBSTORIES_DEV_MODE', false );
