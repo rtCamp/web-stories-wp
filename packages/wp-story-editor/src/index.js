@@ -28,6 +28,7 @@ import './publicPath';
 import StoryEditor, {
   PostLock,
   StatusCheck,
+  addFilter,
 } from '@web-stories-wp/story-editor';
 import { setAppElement } from '@web-stories-wp/design-system';
 import { StrictMode, render } from '@web-stories-wp/react';
@@ -59,10 +60,11 @@ const initialize = (id, config, flags) => {
 
   initializeTracking('Editor');
 
+  addFilter( 'storyEditor.MediaUpload', 'story-editor/wordpress-integration', MediaUpload );
+
   const editorConfig = {
     ...config,
     ...apiConfig,
-    MediaUpload,
     MetaBoxes,
   };
 

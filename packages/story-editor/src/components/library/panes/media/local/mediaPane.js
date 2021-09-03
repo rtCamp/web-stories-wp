@@ -71,6 +71,7 @@ import MissingUploadPermissionDialog from './missingUploadPermissionDialog';
 import paneId from './paneId';
 import VideoOptimizationDialog from './videoOptimizationDialog';
 import LinkInsertion from './hotlink';
+import MediaUpload from '../../../../mediaUpload';
 
 export const ROOT_MARGIN = 300;
 
@@ -176,7 +177,6 @@ function MediaPane(props) {
       video: allowedVideoMimeTypes,
     },
     capabilities: { hasUploadMediaAction },
-    MediaUpload,
   } = useConfig();
 
   const { isTranscodingEnabled } = useFFmpeg();
