@@ -18,15 +18,16 @@
  * Internal dependencies
  */
 import { default as StoryEditor } from './editorApp';
-import PostLock from './components/postLock';
-import StatusCheck from './components/statusCheck';
 import Tooltip from './components/tooltip';
+import Dialog from './components/dialog';
 
 export * from './components/transform';
 export * from './app/config';
 export * from './app/api';
 export * from './app/story';
+export * from './app/currentUser';
 export * from './components/previewPage';
+export * from './output';
 
 export { default as CircularProgress } from './components/circularProgress';
 export { default as base64Encode } from './utils/base64Encode';
@@ -38,5 +39,5 @@ export { GlobalStyle } from './theme';
 export { default as theme } from './theme'; // @todo To be refactored.
 export { GlobalStyle as CropMoveableGlobalStyle } from './components/moveable/cropStyle';
 
-export { PostLock, StatusCheck, Tooltip };
+export { Tooltip, Dialog };
 export default StoryEditor;

@@ -15,3 +15,5 @@
  */
 export { default as MediaUpload } from './mediaUpload';
 export * from './metaBoxes';
+export { default as PostLock } from './postLock';
+export { default as StatusCheck } from './statusCheck';

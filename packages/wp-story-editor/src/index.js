@@ -25,10 +25,6 @@ import './publicPath';
 /**
  * External dependencies
  */
-import StoryEditor, {
-  PostLock,
-  StatusCheck,
-} from '@web-stories-wp/story-editor';
 import { setAppElement } from '@web-stories-wp/design-system';
 import { StrictMode, render } from '@web-stories-wp/react';
 import { FlagsProvider } from 'flagged';
@@ -40,7 +36,7 @@ import { initializeTracking } from '@web-stories-wp/tracking';
  */
 import * as apiConfig from './api';
 import './style.css'; // This way the general editor styles are loaded before all the component styles.
-import { MediaUpload, MetaBoxes, MetaBoxesProvider } from './components';
+import { MediaUpload, MetaBoxes, MetaBoxesProvider, PostLock, StatusCheck } from './components';
 
 /**
  * Initializes the web stories editor.
