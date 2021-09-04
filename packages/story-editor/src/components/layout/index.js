@@ -77,11 +77,6 @@ const MetaBoxesArea = styled(Area).attrs({
   overflow-y: auto;
 `;
 
-const MetaBoxes = (props) => {
-  const Component = applyFilters('storyEditor.MetaBoxes', null);
-  return <Component {...props} />;
-};
-
 function Layout() {
   const snackbarState = useSnackbar(
     ({ removeSnack, currentSnacks, placement }) => ({
@@ -90,6 +85,8 @@ function Layout() {
       placement,
     })
   );
+
+  const MetaBoxes = applyFilters('storyEditor.MetaBoxes', null);
 
   return (
     <>
