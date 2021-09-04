@@ -60,12 +60,20 @@ const initialize = (id, config, flags) => {
 
   initializeTracking('Editor');
 
-  addFilter( 'storyEditor.MediaUpload', 'story-editor/wordpress-integration', MediaUpload );
+  addFilter(
+    'storyEditor.MediaUpload',
+    'story-editor/wordpress-integration',
+    () => MediaUpload
+  );
+  addFilter(
+    'storyEditor.MetaBoxes',
+    'story-editor/wordpress-integration',
+    () => MetaBoxes
+  );
 
   const editorConfig = {
     ...config,
     ...apiConfig,
-    MetaBoxes,
   };
 
   render(

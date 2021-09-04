@@ -41,7 +41,7 @@ import { CanvasProvider } from '../../app/canvas';
 import { HighlightsProvider } from '../../app/highlights';
 import LayoutProvider from '../../app/layout/layoutProvider';
 import { ChecklistCheckpointProvider } from '../checklist';
-import { useConfig } from '../../app';
+import { applyFilters } from '../../hooks';
 
 const Editor = withOverlay(styled.section.attrs({
   'aria-label': __('Web Stories Editor', 'web-stories'),
@@ -77,6 +77,11 @@ const MetaBoxesArea = styled(Area).attrs({
   overflow-y: auto;
 `;
 
+const MetaBoxes = (props) => {
+  const Component = applyFilters('storyEditor.MetaBoxes', null);
+  return <Component {...props} />;
+};
+
 function Layout() {
   const snackbarState = useSnackbar(
     ({ removeSnack, currentSnacks, placement }) => ({
@@ -85,7 +90,7 @@ function Layout() {
       placement,
     })
   );
-  const { MetaBoxes } = useConfig(); // @todo Use filter hook or React portal instead of getting meta-boxes from config.
+
   return (
     <>
       <LayoutProvider>
