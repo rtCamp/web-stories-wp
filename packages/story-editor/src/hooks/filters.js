@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+/**
+ * Heavily inspired by https://www.npmjs.com/package/@wordpress/hooks
+ * and works on the same logic of @wordpress/hooks.
+ */
 class Filters {
   constructor() {
     this.filters = {};
