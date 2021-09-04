@@ -59,7 +59,6 @@ function MediaInput(
   },
   forwardedRef
 ) {
-
   // Options available for the media input menu.
   const availableMenuOptions = [
     { label: __('Edit', 'web-stories'), value: 'edit' },

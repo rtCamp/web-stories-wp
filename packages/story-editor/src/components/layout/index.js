@@ -86,7 +86,7 @@ function Layout() {
     })
   );
 
-  const MetaBoxes = applyFilters('storyEditor.MetaBoxes', null);
+  const MetaBoxes = applyFilters('storyEditor.MetaBoxes', () => null);
 
   return (
     <>

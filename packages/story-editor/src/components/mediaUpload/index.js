@@ -19,7 +19,7 @@
 import { applyFilters } from '../../hooks';
 
 const MediaUpload = (props) => {
-  const Component = applyFilters('storyEditor.MediaUpload', null);
+  const Component = applyFilters('storyEditor.MediaUpload', () => null);
   return <Component {...props} />;
 };
 

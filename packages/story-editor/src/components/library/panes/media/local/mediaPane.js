@@ -67,11 +67,11 @@ import { LOCAL_MEDIA_TYPE_ALL } from '../../../../../app/media/local/types';
 import { focusStyle } from '../../../../panels/shared';
 import useFFmpeg from '../../../../../app/media/utils/useFFmpeg';
 import Tooltip from '../../../../tooltip';
+import MediaUpload from '../../../../mediaUpload';
 import MissingUploadPermissionDialog from './missingUploadPermissionDialog';
 import paneId from './paneId';
 import VideoOptimizationDialog from './videoOptimizationDialog';
 import LinkInsertion from './hotlink';
-import MediaUpload from '../../../../mediaUpload';
 
 export const ROOT_MARGIN = 300;
 
