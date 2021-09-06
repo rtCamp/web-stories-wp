@@ -25,60 +25,33 @@ class Filters {
     this.addFilter = this.createAddFilter(this);
   }
 
-  createApplyFilter({ filters }) {
-    return (filterName, ...rest) => {
-      let value = rest[0];
-      if (!filters[filterName]) {
-        filters[filterName] = {
-          handlers: [],
-        };
-      }
-
-      const { handlers } = filters[filterName];
-
-      if (!handlers?.length) {
-        return value;
-      }
-
-      const filterInfo = {
-        name: filterName,
-        currentIndex: 0,
+  defaultFilterHandler(filterName, handler = null) {
+    if (!this.filters[filterName]) {
+      this.filters[filterName] = {
+        handlers: handler ? [handler] : [],
       };
+    }
 
-      while (filterInfo.currentIndex < handlers.length) {
-        value = handlers[filterInfo.currentIndex].callback(rest);
-        filterInfo.currentIndex++;
-      }
+    return this.filters[filterName].handlers;
+  }
 
-      return value;
+  createApplyFilter() {
+    return (filterName, ...rest) => {
+      const value = rest[0];
+      const handlers = this.defaultFilterHandler(filterName);
+
+      return !handlers?.length ? value : handlers[0].callback(rest);
     };
   }
 
-  createAddFilter({ filters }) {
-    return (filterName, namespace, callback, priority = 10) => {
-      const handler = { callback, priority, namespace };
+  createAddFilter() {
+    return (filterName, namespace, callback) => {
+      const handler = { callback, namespace };
 
-      if (!filters[filterName]) {
-        filters[filterName] = {
-          handlers: [handler],
-        };
-        return;
-      }
+      const handlers = this.defaultFilterHandler(filterName, handler);
 
-      const { handlers } = filters[filterName];
-
-      let counter;
-
-      for (counter = handlers.length; counter > 0; counter--) {
-        if (priority >= handlers[counter - 1].priority) {
-          break;
-        }
-      }
-
-      if (counter === handlers.length) {
-        handlers[counter] = handler;
-      } else {
-        handlers.splice(counter, 0, handler);
+      if (handlers?.length) {
+        handlers[0] = handler;
       }
     };
   }
