@@ -67,6 +67,7 @@ import { LOCAL_MEDIA_TYPE_ALL } from '../../../../../app/media/local/types';
 import { focusStyle } from '../../../../panels/shared';
 import useFFmpeg from '../../../../../app/media/utils/useFFmpeg';
 import Tooltip from '../../../../tooltip';
+import MediaUpload from '../../../../mediaUpload';
 import MissingUploadPermissionDialog from './missingUploadPermissionDialog';
 import paneId from './paneId';
 import VideoOptimizationDialog from './videoOptimizationDialog';
@@ -176,7 +177,6 @@ function MediaPane(props) {
       video: allowedVideoMimeTypes,
     },
     capabilities: { hasUploadMediaAction },
-    MediaUpload,
   } = useConfig();
 
   const { isTranscodingEnabled } = useFFmpeg();

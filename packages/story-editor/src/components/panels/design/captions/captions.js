@@ -43,7 +43,7 @@ import { SimplePanel } from '../../panel';
 import { focusStyle, getCommonValue } from '../../shared';
 import { states, styles, useHighlights } from '../../../../app/highlights';
 import Tooltip from '../../../tooltip';
-import { useConfig } from '../../../../app';
+import MediaUpload from '../../../mediaUpload';
 
 const InputRow = styled.div`
   display: flex;
@@ -96,7 +96,6 @@ function CaptionsPanel({ selectedElements, pushUpdate }) {
   /* @TODO: Implement error handling after removing modal and
   using native browser upload. */
   const uploadError = false;
-  const { MediaUpload } = useConfig();
 
   usePresubmitHandler(
     ({ resource: newResource }) => ({

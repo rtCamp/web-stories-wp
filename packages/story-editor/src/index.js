@@ -27,6 +27,7 @@ export * from './app/config';
 export * from './app/api';
 export * from './app/story';
 export * from './components/previewPage';
+export * from './hooks';
 
 export { default as CircularProgress } from './components/circularProgress';
 export { default as base64Encode } from './utils/base64Encode';

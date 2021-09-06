@@ -30,7 +30,7 @@ import {
  * Internal dependencies
  */
 import { MULTIPLE_VALUE } from '../../constants';
-import { useConfig } from '../../app';
+import MediaUpload from '../mediaUpload';
 
 const StyledInput = styled(Input)`
   button:focus {
@@ -59,8 +59,6 @@ function MediaInput(
   },
   forwardedRef
 ) {
-  const { MediaUpload } = useConfig();
-
   // Options available for the media input menu.
   const availableMenuOptions = [
     { label: __('Edit', 'web-stories'), value: 'edit' },
