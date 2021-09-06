@@ -37,10 +37,9 @@ class Filters {
 
   createApplyFilter() {
     return (filterName, ...rest) => {
-      const value = rest[0];
       const handlers = this.defaultFilterHandler(filterName);
 
-      return !handlers?.length ? value : handlers[0].callback(rest);
+      return handlers?.length ? handlers[0].callback(rest) : rest[0];
     };
   }
 
