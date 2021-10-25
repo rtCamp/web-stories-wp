@@ -71,7 +71,7 @@
     "@wordpress/eslint-plugin": "^9.2.0",
     "axe-core": "^4.3.3",
     "babel-jest": "^27.3.1",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.3",
     "babel-plugin-inline-json-import": "^0.3.2",
     "babel-plugin-styled-components": "^1.13.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
