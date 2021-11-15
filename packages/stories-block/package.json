@@ -23,7 +23,7 @@
     "@wordpress/components": "^18.0.0",
     "@wordpress/compose": "^5.0.0",
     "@wordpress/data": "^6.1.2",
-    "@wordpress/date": "^4.2.2",
+    "@wordpress/date": "^4.2.3",
     "@wordpress/element": "^4.0.0",
     "@wordpress/i18n": "^4.2.2",
     "@wordpress/url": "^3.2.1",
