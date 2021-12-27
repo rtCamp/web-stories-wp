@@ -13,7 +13,7 @@
   "dependencies": {
     "@wordpress/components": "^19.1.1",
     "@wordpress/compose": "^5.0.0",
-    "@wordpress/data": "^6.1.4",
+    "@wordpress/data": "^6.1.5",
     "@wordpress/element": "^4.0.0",
     "@wordpress/i18n": "^4.2.2",
     "prop-types": "^15.7.2"
