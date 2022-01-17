@@ -18,7 +18,7 @@
   "devDependencies": {
     "@web-stories-wp/date": "*",
     "@web-stories-wp/stickers": "*",
-    "puppeteer": "^10.4.0"
+    "puppeteer": "^13.1.0"
   },
   "scripts": {
     "render-template-posters": "node ./scripts/cli.js"
