@@ -56,7 +56,7 @@
     "@rollup/plugin-dynamic-import-vars": "^2.0.2",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.2.0",
+    "@rollup/plugin-terser": "^0.3.0",
     "@rollup/plugin-typescript": "^10.0.1",
     "@rollup/plugin-url": "^8.0.1",
     "@storybook/addon-a11y": "^6.5.14",
