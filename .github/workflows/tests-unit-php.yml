@@ -79,7 +79,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@128a63446a954579617e875aaab7d2978154e969
+        uses: step-security/harden-runner@cba0d00b1fc9a034e1e642ea0f1103c282990604
         with:
           disable-file-monitoring: true
           egress-policy: audit
