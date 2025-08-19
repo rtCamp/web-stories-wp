@@ -99,7 +99,7 @@ jobs:
             dl.cloudsmith.io:443
 
       - name: Checkout
-        uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
 
       # PHP-Scoper only works on PHP 7.4+ and we need to prefix our dependencies to accurately test them.
       # So we temporarily switch PHP versions, do a full install and then remove the package.
